@@ -116,7 +116,7 @@ The project is deployed on Render - https://cv-2gja.onrender.com/
 
 
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - MongoDB integration
 - User authentication
