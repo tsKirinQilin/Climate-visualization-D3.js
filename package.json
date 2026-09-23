@@ -1,0 +1,26 @@
+{
+  "name": "climate-visualization",
+  "version": "2.0.0",
+  "description": "Interactive D3.js global weather analytics, seasonal forecasting and AI climate assistant",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "keywords": [
+    "weather",
+    "climate",
+    "d3",
+    "visualization"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.2",
+    "express": "^5.2.1"
+  }
+}

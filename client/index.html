@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Visualization</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="app-title">
+            <h1>Climate Visualization</h1>
+            <p>Global weather analytics, seasonal outlooks and Climate AI</p>
+        </div>
+
+        <div class="location-clock">
+            <span id="clock-location">Local time</span>
+            <span id="clock-time">--:--:--</span>
+        </div>
+
+        <div class="search-container">
+            <div class="search-bar">
+                <input
+                    type="text"
+                    id="location-search"
+                    aria-label="Search location"
+                    autocomplete="off"
+                >
+
+                <button id="search-button" type="button">
+                    Search
+                </button>
+            </div>
+
+            <div id="search-results"></div>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="map-panel">
+            <div class="map-toolbar">
+                <div class="map-tools-left">
+                    <div class="map-mode-switch" aria-label="Map mode">
+                        <button
+                            id="realtime-mode-button"
+                            class="map-mode-button active"
+                            type="button"
+                        >
+                            Realtime
+                        </button>
+
+                        <button
+                            id="forecast-mode-button"
+                            class="map-mode-button"
+                            type="button"
+                        >
+                            Forecast
+                        </button>
+                    </div>
+
+                    <select
+                        id="forecast-month"
+                        class="forecast-month"
+                        aria-label="Forecast month"
+                        hidden
+                    ></select>
+
+                    <div class="metric-switch" aria-label="Map metric">
+                        <button
+                            id="temperature-metric-button"
+                            class="metric-button active"
+                            type="button"
+                        >
+                            Temp
+                        </button>
+                        <button
+                            id="precipitation-metric-button"
+                            class="metric-button"
+                            type="button"
+                        >
+                            Rain
+                        </button>
+                        <button
+                            id="wind-metric-button"
+                            class="metric-button"
+                            type="button"
+                        >
+                            Wind
+                        </button>
+                    </div>
+                </div>
+
+                <div id="temperature-legend">
+                    <div id="temperature-legend-title">
+                        Current temperature
+                    </div>
+
+                    <div class="temperature-legend-bar"></div>
+
+                    <div class="temperature-legend-labels">
+                        <span>-30°</span>
+                        <span>-10°</span>
+                        <span>0°</span>
+                        <span>20°</span>
+                        <span>40°C</span>
+                    </div>
+                </div>
+
+                <div class="map-actions">
+                    <button id="compare-map-button" type="button">
+                        Compare
+                    </button>
+                    <button id="about-data-button" type="button">
+                        About data
+                    </button>
+                    <button id="reset-map-button" type="button">
+                        Reset map
+                    </button>
+                </div>
+            </div>
+
+            <div id="map"></div>
+        </section>
+
+        <aside class="weather-panel">
+            <div id="weather-result">
+                <div class="weather-placeholder">
+                    <h2>Select a location</h2>
+                    <p>
+                        Click on the map, choose a city, or use search
+                        to open weather details and analytics.
+                    </p>
+                </div>
+            </div>
+
+            <section id="analytics-result" class="side-section" hidden></section>
+            <section id="compare-result" class="side-section comparison-section" hidden></section>
+
+            <section class="side-section ai-panel" id="ai-panel">
+                <div class="section-heading-row">
+                    <div>
+                        <div class="section-kicker">Climate AI</div>
+                        <h3>Ask about the data</h3>
+                    </div>
+                    <span class="ai-status" id="ai-status">Gemini</span>
+                </div>
+
+                <div class="ai-suggestions" id="ai-suggestions">
+                    <button type="button" data-prompt="Explain the selected forecast anomaly.">
+                        Explain anomaly
+                    </button>
+                    <button type="button" data-prompt="Compare this location with last year for the selected month.">
+                        Compare with last year
+                    </button>
+                    <button type="button" data-prompt="Show the temperature trend for this calendar month over the last 10 years.">
+                        10-year trend
+                    </button>
+                </div>
+
+                <div id="ai-chat" class="ai-chat" aria-live="polite">
+                    <div class="ai-message assistant">
+                        Select a location, then ask a weather or climate question. Quantitative answers use the application's data tools rather than guessed values.
+                    </div>
+                </div>
+
+                <div id="ai-chart" class="ai-chart" hidden></div>
+
+                <form id="ai-form" class="ai-form">
+                    <textarea
+                        id="ai-input"
+                        rows="2"
+                        maxlength="2000"
+                        placeholder="Ask Climate AI…"
+                        aria-label="Ask Climate AI"
+                    ></textarea>
+                    <button id="ai-send-button" type="submit">Ask</button>
+                </form>
+
+                <div id="ai-sources" class="ai-sources" hidden></div>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="data-attribution">
+        Data: OpenWeather · Open-Meteo · ECMWF SEAS5 · Natural Earth / world-atlas
+    </footer>
+
+    <div id="data-modal" class="data-modal" hidden>
+        <div class="data-modal-backdrop" data-close-modal="true"></div>
+        <div class="data-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="data-modal-title">
+            <button class="data-modal-close" id="data-modal-close" type="button" aria-label="Close">×</button>
+            <div class="section-kicker">Methodology</div>
+            <h2 id="data-modal-title">How the data is used</h2>
+
+            <div class="methodology-grid">
+                <div>
+                    <h3>Realtime</h3>
+                    <p>Detailed selected-point conditions come from OpenWeather. The global temperature, precipitation, cloud and wind field comes from Open-Meteo.</p>
+                </div>
+                <div>
+                    <h3>Short-range analytics</h3>
+                    <p>The 24-hour and 7-day charts use Open-Meteo forecast data. They are forecasts, not observations.</p>
+                </div>
+                <div>
+                    <h3>Seasonal forecast</h3>
+                    <p>Monthly outlooks use the ECMWF SEAS5 ensemble mean through Open-Meteo. They describe broad regional tendencies rather than exact weather on a particular day.</p>
+                </div>
+                <div>
+                    <h3>Anomaly</h3>
+                    <p>A temperature anomaly is the model forecast minus the model's long-term climatology. +2 °C means warmer than that model baseline, not necessarily 2 °C warmer than last year.</p>
+                </div>
+                <div>
+                    <h3>Historical comparisons</h3>
+                    <p>Past-period comparisons used by Climate AI come from the Open-Meteo Historical Weather API and are calculated on the server.</p>
+                </div>
+                <div>
+                    <h3>Climate AI</h3>
+                    <p>Gemini interprets the question and requests application tools. Numerical weather values and comparisons are produced by the backend services; the model explains the returned data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/map.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/analytics.js"></script>
+    <script src="./js/ai.js"></script>
+</body>
+</html>
