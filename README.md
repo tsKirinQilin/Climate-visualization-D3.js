@@ -134,5 +134,3 @@ OPENWEATHER_API_KEY
 GEMINI_API_KEY
 GEMINI_MODEL=gemini-3.8-flash
 ```
-
-The server uses `process.env.PORT` and does not require a database for this checkpoint.
