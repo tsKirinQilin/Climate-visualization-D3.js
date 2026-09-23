@@ -2,8 +2,6 @@
 
 A D3.js weather and climate intelligence platform built as a single Node.js / Express application.
 
-## Checkpoint 2 features
-
 ### Global interactive map
 
 - Realtime global map with temperature, precipitation and wind-speed metrics; precipitation uses a denser 5° sampling grid with a short server cache for better spatial detail.
@@ -129,7 +127,7 @@ Climate AI calls the same service layer as the normal application rather than di
 
 ## Deployment
 
-The Express server also serves the frontend, so the application can be deployed as one Node web service. Configure environment secrets on the hosting platform:
+https://climate-visualization-d3-js.onrender.com
 
 ```text
 OPENWEATHER_API_KEY
