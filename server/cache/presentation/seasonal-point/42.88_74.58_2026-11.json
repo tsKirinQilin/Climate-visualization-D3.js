@@ -1,0 +1,17 @@
+{
+  "savedAt": "2026-10-02T08:40:30.064Z",
+  "data": {
+    "month": "2026-11",
+    "latitude": 42.857143,
+    "longitude": 74.825584,
+    "temperature": 3.6,
+    "anomaly": 1,
+    "precipitation": 61.2,
+    "precipitationAnomaly": 11,
+    "windSpeed": 1.7,
+    "windSpeedAnomaly": 0,
+    "model": "ECMWF SEAS5 ensemble mean",
+    "source": "Open-Meteo / ECMWF",
+    "note": "Seasonal forecasts describe regional monthly conditions and are not exact local day-by-day predictions."
+  }
+}

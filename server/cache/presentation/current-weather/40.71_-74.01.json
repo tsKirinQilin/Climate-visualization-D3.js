@@ -1,0 +1,24 @@
+{
+  "savedAt": "2026-10-02T08:47:30.306Z",
+  "data": {
+    "location": {
+      "name": "New York",
+      "country": "US",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "timezoneOffset": -14400
+    },
+    "weather": {
+      "temperature": 20.12,
+      "feelsLike": 20.46,
+      "humidity": 87,
+      "pressure": 1014,
+      "windSpeed": 3.6,
+      "cloudiness": 5,
+      "precipitation": 0,
+      "condition": "Clear",
+      "description": "clear sky"
+    },
+    "observedAt": "2026-10-02T08:35:37.000Z"
+  }
+}

@@ -1,3 +1,5 @@
+import { fetchJsonWithRetry } from "../utils/fetchJson.js";
+
 const FORECAST_API_URL = "https://api.open-meteo.com/v1/forecast";
 
 export async function getShortRangeForecast(latitude, longitude) {
@@ -12,11 +14,9 @@ export async function getShortRangeForecast(latitude, longitude) {
         `&wind_speed_unit=ms` +
         `&timezone=auto`;
 
-    const response = await fetch(url);
-
-    if (!response.ok) {
-        throw new Error(`Open-Meteo forecast request failed: ${response.status}`);
-    }
-
-    return response.json();
+    return fetchJsonWithRetry(url, {
+        label: "Open-Meteo forecast request failed",
+        retries: 0,
+        timeoutMs: 4500
+    });
 }

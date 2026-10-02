@@ -4,6 +4,10 @@ import {
 } from "./aiToolService.js";
 
 const DEFAULT_MODEL = "gemini-3.8-flash";
+const FALLBACK_MODELS = [
+    "gemini-3.7-flash",
+    "gemini-3.5-flash-lite"
+];
 const MAX_TOOL_ROUNDS = 6;
 
 function buildSystemInstruction(context = {}) {
@@ -94,10 +98,16 @@ async function callGemini(contents, context) {
         throw error;
     }
 
-    const model = process.env.GEMINI_MODEL || DEFAULT_MODEL;
-    const url =
-        `https://generativelanguage.googleapis.com/v1beta/models/` +
-        `${encodeURIComponent(model)}:generateContent`;
+    const configuredModel =
+        process.env.GEMINI_MODEL || DEFAULT_MODEL;
+
+    const models = [
+        configuredModel,
+        ...FALLBACK_MODELS
+    ].filter(
+        (model, index, items) =>
+            items.indexOf(model) === index
+    );
 
     const requestBody = JSON.stringify({
         systemInstruction: {
@@ -115,58 +125,116 @@ async function callGemini(contents, context) {
         }
     });
 
-    const maxRetries = 3;
+    let lastTemporaryError = null;
 
-    for (let attempt = 0; attempt <= maxRetries; attempt += 1) {
-        const response = await fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "x-goog-api-key": apiKey
-            },
-            body: requestBody
-        });
+    for (const model of models) {
+        const url =
+            `https://generativelanguage.googleapis.com/v1beta/models/` +
+            `${encodeURIComponent(model)}:generateContent`;
 
-        const data = await response.json().catch(() => ({}));
+        const maxRetries = 2;
 
-        if (response.ok) {
-            const content = data.candidates?.[0]?.content;
+        for (
+            let attempt = 0;
+            attempt <= maxRetries;
+            attempt += 1
+        ) {
+            let response;
+            let data = {};
 
-            if (!content) {
-                throw new Error("Gemini returned no response content");
+            try {
+                response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "x-goog-api-key": apiKey
+                    },
+                    body: requestBody,
+                    signal: AbortSignal.timeout(25000)
+                });
+
+                data = await response.json().catch(() => ({}));
+            } catch (error) {
+                lastTemporaryError = error;
+
+                if (attempt === maxRetries) {
+                    console.warn(
+                        `Gemini ${model} network request failed. Trying fallback model if available.`
+                    );
+                    break;
+                }
+
+                const delay = Math.min(
+                    6000,
+                    1200 * 2 ** attempt
+                );
+
+                console.warn(
+                    `Gemini ${model} network error. Retrying in ${delay} ms.`
+                );
+                await sleep(delay);
+                continue;
             }
 
-            return content;
+            if (response.ok) {
+                const content = data.candidates?.[0]?.content;
+
+                if (!content) {
+                    throw new Error(
+                        "Gemini returned no response content"
+                    );
+                }
+
+                return content;
+            }
+
+            const isTemporary =
+                response.status === 429 ||
+                response.status === 500 ||
+                response.status === 502 ||
+                response.status === 503 ||
+                response.status === 504;
+
+            const message =
+                data.error?.message ||
+                `Gemini API request failed: ${response.status}`;
+
+            if (!isTemporary) {
+                const error = new Error(message);
+                error.status = response.status;
+                error.code = "AI_REQUEST_FAILED";
+                throw error;
+            }
+
+            lastTemporaryError = new Error(message);
+            lastTemporaryError.status = response.status;
+
+            if (attempt === maxRetries) {
+                console.warn(
+                    `Gemini ${model} remains unavailable (${response.status}). Trying fallback model if available.`
+                );
+                break;
+            }
+
+            const delay = retryDelayFromHeader(
+                response,
+                attempt
+            );
+
+            console.warn(
+                `Gemini ${model} temporarily unavailable (${response.status}). Retrying in ${delay} ms.`
+            );
+            await sleep(delay);
         }
-
-        const isTemporary =
-            response.status === 429 ||
-            response.status === 500 ||
-            response.status === 502 ||
-            response.status === 503 ||
-            response.status === 504;
-
-        const message =
-            data.error?.message ||
-            `Gemini API request failed: ${response.status}`;
-
-        if (!isTemporary || attempt === maxRetries) {
-            const error = new Error(message);
-            error.status = response.status;
-            error.code = isTemporary
-                ? "AI_TEMPORARILY_UNAVAILABLE"
-                : "AI_REQUEST_FAILED";
-            throw error;
-        }
-
-        const delay = retryDelayFromHeader(response, attempt);
-        console.warn(
-            `Gemini temporarily unavailable (${response.status}). Retrying in ${delay} ms.`
-        );
-        await sleep(delay);
     }
 
-    throw new Error("Gemini request failed");
+    const error = new Error(
+        lastTemporaryError?.message ||
+        "Climate AI is temporarily unavailable. Please try again shortly."
+    );
+    error.status = lastTemporaryError?.status || 503;
+    error.code = "AI_TEMPORARILY_UNAVAILABLE";
+    throw error;
 }
 
 export async function runClimateAssistant({

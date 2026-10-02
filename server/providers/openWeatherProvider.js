@@ -1,3 +1,5 @@
+import { fetchJsonWithRetry } from "../utils/fetchJson.js";
+
 export async function getCurrentWeather(latitude, longitude) {
     const url =
         `https://api.openweathermap.org/data/2.5/weather` +
@@ -6,13 +8,9 @@ export async function getCurrentWeather(latitude, longitude) {
         `&appid=${process.env.OPENWEATHER_API_KEY}` +
         `&units=metric`;
 
-    const response = await fetch(url);
-
-    if (!response.ok) {
-        throw new Error(`OpenWeather request failed: ${response.status}`);
-    }
-
-    const data = await response.json();
-
-    return data;
+    return fetchJsonWithRetry(url, {
+        label: "OpenWeather request failed",
+        retries: 0,
+        timeoutMs: 4500
+    });
 }

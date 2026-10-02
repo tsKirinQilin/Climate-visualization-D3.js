@@ -1,13 +1,16 @@
 import { getSeasonalMapConditions } from "../providers/openMeteoTemperatureProvider.js";
 import { isForecastMonthSupported } from "./temperatureMapService.js";
+import {
+    getWithPersistentFallback,
+    quantizedCoordinateKey
+} from "../utils/persistentCache.js";
 
 export { isForecastMonthSupported };
 
-export async function getSeasonalForecastForLocation(
-    latitude,
-    longitude,
-    month
-) {
+const SEASONAL_POINT_TTL = 6 * 60 * 60 * 1000;
+const INTERACTIVE_WAIT_MS = 5000;
+
+async function fetchSeasonalForecastForLocation(latitude, longitude, month) {
     const data = await getSeasonalMapConditions(
         [{ latitude, longitude }],
         month
@@ -52,5 +55,34 @@ export async function getSeasonalForecastForLocation(
         model: "ECMWF SEAS5 ensemble mean",
         source: "Open-Meteo / ECMWF",
         note: "Seasonal forecasts describe regional monthly conditions and are not exact local day-by-day predictions."
+    };
+}
+
+export async function getSeasonalForecastForLocation(
+    latitude,
+    longitude,
+    month
+) {
+    const key = `${quantizedCoordinateKey(latitude, longitude, 2)}_${month}`;
+
+    const result = await getWithPersistentFallback({
+        namespace: "seasonal-point",
+        key,
+        ttlMs: SEASONAL_POINT_TTL,
+        maxWaitMs: INTERACTIVE_WAIT_MS,
+        loadFresh: () => fetchSeasonalForecastForLocation(
+            latitude,
+            longitude,
+            month
+        )
+    });
+
+    return {
+        ...result.data,
+        cache: {
+            status: result.status,
+            savedAt: result.savedAt,
+            ageMs: result.ageMs
+        }
     };
 }

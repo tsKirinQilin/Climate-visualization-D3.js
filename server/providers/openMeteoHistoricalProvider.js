@@ -1,3 +1,5 @@
+import { fetchJsonWithRetry } from "../utils/fetchJson.js";
+
 const ARCHIVE_API_URL = "https://archive-api.open-meteo.com/v1/archive";
 
 export async function getHistoricalDaily(
@@ -16,11 +18,9 @@ export async function getHistoricalDaily(
         `&wind_speed_unit=ms` +
         `&timezone=auto`;
 
-    const response = await fetch(url);
-
-    if (!response.ok) {
-        throw new Error(`Open-Meteo historical request failed: ${response.status}`);
-    }
-
-    return response.json();
+    return fetchJsonWithRetry(url, {
+        label: "Open-Meteo historical request failed",
+        retries: 0,
+        timeoutMs: 4500
+    });
 }

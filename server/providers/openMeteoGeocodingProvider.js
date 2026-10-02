@@ -1,3 +1,5 @@
+import { fetchJsonWithRetry } from "../utils/fetchJson.js";
+
 export async function searchLocations(query) {
     const url =
         `https://geocoding-api.open-meteo.com/v1/search` +
@@ -6,13 +8,11 @@ export async function searchLocations(query) {
         `&language=en` +
         `&format=json`;
 
-    const response = await fetch(url);
-
-    if (!response.ok) {
-        throw new Error(`Open-Meteo geocoding request failed: ${response.status}`);
-    }
-
-    const data = await response.json();
+    const data = await fetchJsonWithRetry(url, {
+        label: "Open-Meteo geocoding request failed",
+        retries: 0,
+        timeoutMs: 4500
+    });
 
     return data.results ?? [];
 }

@@ -92,6 +92,25 @@
                             Wind
                         </button>
                     </div>
+
+                    <div class="basemap-switch" aria-label="Base map">
+                        <button
+                            id="standard-basemap-button"
+                            class="basemap-button active"
+                            type="button"
+                        >
+                            Map
+                        </button>
+                        <button
+                            id="satellite-basemap-button"
+                            class="basemap-button"
+                            type="button"
+                            disabled
+                            title="Satellite imagery requires MAPTILER_API_KEY"
+                        >
+                            Satellite
+                        </button>
+                    </div>
                 </div>
 
                 <div id="temperature-legend">
@@ -108,11 +127,17 @@
                         <span>20°</span>
                         <span>40°C</span>
                     </div>
+                    <div id="map-data-meta" class="map-data-meta">
+                        Open-Meteo · loading…
+                    </div>
                 </div>
 
                 <div class="map-actions">
                     <button id="compare-map-button" type="button">
                         Compare
+                    </button>
+                    <button id="export-csv-button" type="button" disabled title="Select a location to export analytics">
+                        Export CSV
                     </button>
                     <button id="about-data-button" type="button">
                         About data
@@ -149,20 +174,24 @@
                     <span class="ai-status" id="ai-status">Gemini</span>
                 </div>
 
+                <div id="ai-context" class="ai-context">
+                    Context: no location selected
+                </div>
+
                 <div class="ai-suggestions" id="ai-suggestions">
-                    <button type="button" data-prompt="Explain the selected forecast anomaly.">
-                        Explain anomaly
+                    <button type="button" data-action="primary">
+                        Explain current conditions
                     </button>
-                    <button type="button" data-prompt="Compare this location with last year for the selected month.">
-                        Compare with last year
+                    <button type="button" data-action="secondary">
+                        Next 7 days
                     </button>
-                    <button type="button" data-prompt="Show the temperature trend for this calendar month over the last 10 years.">
+                    <button type="button" data-action="trend">
                         10-year trend
                     </button>
                 </div>
 
                 <div id="ai-chat" class="ai-chat" aria-live="polite">
-                    <div class="ai-message assistant">
+                    <div class="ai-message assistant" id="ai-context-message">
                         Select a location, then ask a weather or climate question. Quantitative answers use the application's data tools rather than guessed values.
                     </div>
                 </div>
@@ -186,7 +215,7 @@
     </main>
 
     <footer class="data-attribution">
-        Data: OpenWeather · Open-Meteo · ECMWF SEAS5 · Natural Earth / world-atlas
+        Data: OpenWeather · Open-Meteo · ECMWF SEAS5 · Natural Earth / world-atlas · optional MapTiler satellite basemap
     </footer>
 
     <div id="data-modal" class="data-modal" hidden>
@@ -199,7 +228,7 @@
             <div class="methodology-grid">
                 <div>
                     <h3>Realtime</h3>
-                    <p>Detailed selected-point conditions come from OpenWeather. The global temperature, precipitation, cloud and wind field comes from Open-Meteo.</p>
+                    <p>Detailed selected-point conditions come from OpenWeather. Global temperature, cloud and wind fields come from Open-Meteo, while Realtime Rain uses the OpenWeather Weather Maps 1.0 precipitation tile layer for denser worldwide coverage.</p>
                 </div>
                 <div>
                     <h3>Short-range analytics</h3>
@@ -220,6 +249,26 @@
                 <div>
                     <h3>Climate AI</h3>
                     <p>Gemini interprets the question and requests application tools. Numerical weather values and comparisons are produced by the backend services; the model explains the returned data.</p>
+                </div>
+                <div>
+                    <h3>Seasonal precipitation</h3>
+                    <p>The forecast rain map shows precipitation anomaly relative to the model climatology: red means drier than the model baseline and blue means wetter. The absolute monthly mean remains available in the location panel.</p>
+                </div>
+                <div>
+                    <h3>Wind visualization</h3>
+                    <p>The wind map interpolates the sampled Open-Meteo wind-speed field into a continuous colour surface. Animated D3 streamlines use the sampled wind direction and speed to show flow.</p>
+                </div>
+                <div>
+                    <h3>Spatial sampling</h3>
+                    <p>Global temperature and wind fields use sampled geographic grids to control API load. Realtime Rain is rendered from OpenWeather raster precipitation tiles on a Web Mercator D3 map, because precipitation is too spatially local for the coarse global point grid used by temperature.</p>
+                </div>
+                <div>
+                    <h3>Basemap layers</h3>
+                    <p>The standard MAP view uses a MapTiler terrain/landscape basemap when available, while SATELLITE uses MapTiler satellite imagery. Temperature, rain and wind remain separate weather overlays above either basemap.</p>
+                </div>
+                <div>
+                    <h3>Freshness & limitations</h3>
+                    <p>Observation timestamps are shown for current weather. ECMWF SEAS5 is a regional seasonal model at roughly 36 km resolution, updates monthly around the 5th, and is not bias-corrected. It should not be treated as an exact local day-by-day forecast.</p>
                 </div>
             </div>
         </div>

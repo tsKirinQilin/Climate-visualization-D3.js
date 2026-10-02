@@ -1,3 +1,5 @@
+import { fetchJsonWithRetry } from "../utils/fetchJson.js";
+
 const CURRENT_API_URL = "https://api.open-meteo.com/v1/forecast";
 const SEASONAL_API_URL = "https://seasonal-api.open-meteo.com/v1/seasonal";
 const BATCH_SIZE = 60;
@@ -25,33 +27,6 @@ function normalizeResponse(data) {
     return Array.isArray(data) ? data : [data];
 }
 
-async function requestJson(url, errorLabel, maxRetries = 5) {
-    for (let attempt = 0; attempt <= maxRetries; attempt += 1) {
-        const response = await fetch(url);
-
-        if (response.ok) {
-            return response.json();
-        }
-
-        const canRetry = response.status === 429 || response.status === 503;
-
-        if (!canRetry || attempt === maxRetries) {
-            throw new Error(`${errorLabel}: ${response.status}`);
-        }
-
-        const retryAfterHeader = response.headers.get("retry-after");
-        const retryAfterSeconds = Number(retryAfterHeader);
-        const delay = Number.isFinite(retryAfterSeconds) && retryAfterSeconds > 0
-            ? retryAfterSeconds * 1000
-            : 1500 * Math.pow(2, attempt);
-
-        console.log(`Open-Meteo rate limit. Retrying in ${delay} ms...`);
-        await sleep(delay);
-    }
-
-    throw new Error(errorLabel);
-}
-
 function enqueueSeasonalRequest(task) {
     const request = seasonalRequestQueue.then(task);
     seasonalRequestQueue = request.catch(() => {});
@@ -69,32 +44,39 @@ function monthDateRange(month) {
 
 export async function getCurrentMapConditions(points) {
     const batches = splitIntoBatches(points);
+    const responses = [];
 
-    const responses = await Promise.all(
-        batches.map(async (batch) => {
-            const latitudes = coordinateList(batch, "latitude");
-            const longitudes = coordinateList(batch, "longitude");
+    // Run global-map batches sequentially. This is slightly slower than
+    // Promise.all, but much more reliable on free APIs and flaky networks.
+    for (let index = 0; index < batches.length; index += 1) {
+        const batch = batches[index];
+        const latitudes = coordinateList(batch, "latitude");
+        const longitudes = coordinateList(batch, "longitude");
 
-            const url =
-                `${CURRENT_API_URL}` +
-                `?latitude=${encodeURIComponent(latitudes)}` +
-                `&longitude=${encodeURIComponent(longitudes)}` +
-                `&current=temperature_2m,precipitation,cloud_cover,wind_speed_10m,wind_direction_10m` +
-                `&wind_speed_unit=ms` +
-                `&timezone=UTC`;
+        const url =
+            `${CURRENT_API_URL}` +
+            `?latitude=${encodeURIComponent(latitudes)}` +
+            `&longitude=${encodeURIComponent(longitudes)}` +
+            `&current=temperature_2m,precipitation,cloud_cover,wind_speed_10m,wind_direction_10m` +
+            `&wind_speed_unit=ms` +
+            `&cell_selection=nearest` +
+            `&timezone=UTC`;
 
-            const data = await requestJson(
-                url,
-                "Open-Meteo realtime map request failed"
-            );
+        const data = await fetchJsonWithRetry(url, {
+            label: "Open-Meteo realtime map request failed",
+            retries: 3,
+            baseDelayMs: 900
+        });
 
-            return normalizeResponse(data);
-        })
-    );
+        responses.push(...normalizeResponse(data));
 
-    return responses.flat();
+        if (index < batches.length - 1) {
+            await sleep(120);
+        }
+    }
+
+    return responses;
 }
-
 
 export async function getCurrentPrecipitationConditions(points) {
     const batches = splitIntoBatches(points);
@@ -113,11 +95,11 @@ export async function getCurrentPrecipitationConditions(points) {
             `&precipitation_unit=mm` +
             `&timezone=UTC`;
 
-        const data = await requestJson(
-            url,
-            "Open-Meteo realtime precipitation request failed",
-            2
-        );
+        const data = await fetchJsonWithRetry(url, {
+            label: "Open-Meteo realtime precipitation request failed",
+            retries: 2,
+            baseDelayMs: 900
+        });
 
         responses.push(...normalizeResponse(data));
 
@@ -146,14 +128,16 @@ async function getSeasonalMapConditionsInternal(points, month) {
             `&monthly=temperature_2m_mean,temperature_2m_anomaly,precipitation_mean,precipitation_anomaly,wind_speed_10m_mean,wind_speed_10m_anomaly` +
             `&models=ecmwf_seas5_ensemble_mean` +
             `&wind_speed_unit=ms` +
+            `&cell_selection=nearest` +
             `&start_date=${startDate}` +
             `&end_date=${endDate}` +
             `&timezone=UTC`;
 
-        const data = await requestJson(
-            url,
-            "Open-Meteo seasonal map request failed"
-        );
+        const data = await fetchJsonWithRetry(url, {
+            label: "Open-Meteo seasonal map request failed",
+            retries: 4,
+            baseDelayMs: 1500
+        });
 
         responses.push(...normalizeResponse(data));
 
@@ -193,10 +177,11 @@ export function getSeasonalProfileConditions(latitude, longitude) {
             `&end_date=${endDate}` +
             `&timezone=UTC`;
 
-        const data = await requestJson(
-            url,
-            "Open-Meteo seasonal profile request failed"
-        );
+        const data = await fetchJsonWithRetry(url, {
+            label: "Open-Meteo seasonal profile request failed",
+            retries: 4,
+            baseDelayMs: 1500
+        });
 
         return normalizeResponse(data)[0];
     });

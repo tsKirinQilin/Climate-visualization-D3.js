@@ -1,4 +1,5 @@
 import { getWeatherForLocation } from "../services/weatherService.js";
+import { getWeatherTile } from "../providers/openWeatherTileProvider.js";
 
 export async function getCurrentWeather(req, res) {
     const { lat, lon } = req.query;
@@ -34,6 +35,27 @@ export async function getCurrentWeather(req, res) {
 
         res.status(502).json({
             error: "Failed to retrieve weather data"
+        });
+    }
+}
+
+export async function getMapTile(req, res) {
+    const { layer, z, x, y } = req.params;
+    const zoom = Number(z);
+    const tileX = Number(x);
+    const tileY = Number(y);
+
+    try {
+        const tile = await getWeatherTile(layer, zoom, tileX, tileY);
+
+        res.setHeader("Content-Type", tile.contentType);
+        res.setHeader("Cache-Control", "public, max-age=300, stale-while-revalidate=1800");
+        res.setHeader("X-Weather-Tile-Cache", tile.cacheStatus);
+        res.send(tile.buffer);
+    } catch (error) {
+        console.error(error);
+        res.status(error?.status || 502).json({
+            error: error?.message || "Failed to retrieve weather tile"
         });
     }
 }

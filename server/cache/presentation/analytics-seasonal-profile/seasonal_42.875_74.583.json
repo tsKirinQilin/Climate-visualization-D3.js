@@ -1,0 +1,75 @@
+{
+  "savedAt": "2026-10-02T08:40:29.960Z",
+  "data": {
+    "latitude": 43.138172,
+    "longitude": 74.73685,
+    "months": [
+      {
+        "month": "2026-10",
+        "temperature": 10.4,
+        "temperatureAnomaly": 1.4,
+        "precipitation": 53.6,
+        "precipitationAnomaly": 20.7,
+        "windSpeed": 1.9,
+        "windSpeedAnomaly": -0.1
+      },
+      {
+        "month": "2026-11",
+        "temperature": 2.1,
+        "temperatureAnomaly": 0.8,
+        "precipitation": 43.2,
+        "precipitationAnomaly": 6.2,
+        "windSpeed": 2,
+        "windSpeedAnomaly": 0
+      },
+      {
+        "month": "2026-12",
+        "temperature": -3.4,
+        "temperatureAnomaly": 1.1,
+        "precipitation": 39,
+        "precipitationAnomaly": 8.2,
+        "windSpeed": 2.2,
+        "windSpeedAnomaly": 0
+      },
+      {
+        "month": "2027-01",
+        "temperature": -4.8,
+        "temperatureAnomaly": 1.5,
+        "precipitation": 38.9,
+        "precipitationAnomaly": 10.4,
+        "windSpeed": 2.2,
+        "windSpeedAnomaly": 0
+      },
+      {
+        "month": "2027-02",
+        "temperature": -1.5,
+        "temperatureAnomaly": 2.4,
+        "precipitation": 45.1,
+        "precipitationAnomaly": 12.8,
+        "windSpeed": 2.2,
+        "windSpeedAnomaly": 0.1
+      },
+      {
+        "month": "2027-03",
+        "temperature": 3.6,
+        "temperatureAnomaly": 1.4,
+        "precipitation": 67.3,
+        "precipitationAnomaly": 13.6,
+        "windSpeed": 2.3,
+        "windSpeedAnomaly": 0
+      },
+      {
+        "month": "2027-04",
+        "temperature": null,
+        "temperatureAnomaly": null,
+        "precipitation": null,
+        "precipitationAnomaly": null,
+        "windSpeed": null,
+        "windSpeedAnomaly": null
+      }
+    ],
+    "model": "ECMWF SEAS5 ensemble mean",
+    "source": "Open-Meteo / ECMWF",
+    "note": "Seasonal values describe broad monthly conditions. They are not exact day-by-day local predictions."
+  }
+}

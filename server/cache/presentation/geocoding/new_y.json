@@ -1,0 +1,45 @@
+{
+  "savedAt": "2026-10-02T08:47:28.543Z",
+  "data": [
+    {
+      "name": "New York",
+      "country": "US",
+      "state": "New York",
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "timezone": "America/New_York"
+    },
+    {
+      "name": "York",
+      "country": "US",
+      "state": "Nebraska",
+      "latitude": 40.86807,
+      "longitude": -97.592,
+      "timezone": "America/Chicago"
+    },
+    {
+      "name": "Florence",
+      "country": "US",
+      "state": "Indiana",
+      "latitude": 38.78423,
+      "longitude": -84.92439,
+      "timezone": "America/Indiana/Vevay"
+    },
+    {
+      "name": "New York",
+      "country": "GB",
+      "state": "England",
+      "latitude": 53.07897,
+      "longitude": -0.14008,
+      "timezone": "Europe/London"
+    },
+    {
+      "name": "New York",
+      "country": "JM",
+      "state": "Saint Ann Parish",
+      "latitude": 18.25397,
+      "longitude": -77.17683,
+      "timezone": "America/Jamaica"
+    }
+  ]
+}

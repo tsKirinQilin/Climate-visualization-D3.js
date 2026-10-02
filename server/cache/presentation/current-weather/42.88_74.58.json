@@ -1,0 +1,24 @@
+{
+  "savedAt": "2026-10-02T08:40:30.187Z",
+  "data": {
+    "location": {
+      "name": "Bishkek",
+      "country": "KG",
+      "latitude": 42.875,
+      "longitude": 74.5833,
+      "timezoneOffset": 21600
+    },
+    "weather": {
+      "temperature": 20.18,
+      "feelsLike": 18.96,
+      "humidity": 27,
+      "pressure": 1023,
+      "windSpeed": 4.3,
+      "cloudiness": 3,
+      "precipitation": 0,
+      "condition": "Clear",
+      "description": "clear sky"
+    },
+    "observedAt": "2026-10-02T08:40:30.000Z"
+  }
+}

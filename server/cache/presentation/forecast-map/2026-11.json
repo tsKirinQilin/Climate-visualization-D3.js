@@ -1,0 +1,3125 @@
+{
+  "savedAt": "2026-10-02T08:40:29.778Z",
+  "data": [
+    {
+      "latitude": -85,
+      "longitude": -180,
+      "temperature": -27.4,
+      "anomaly": 0.5,
+      "precipitation": 9.1,
+      "precipitationAnomaly": 1.5,
+      "windSpeed": 2.5,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -85,
+      "longitude": -165,
+      "temperature": -13.3,
+      "anomaly": 0.7,
+      "precipitation": 16.2,
+      "precipitationAnomaly": 3.7,
+      "windSpeed": 5.5,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -85,
+      "longitude": -150,
+      "temperature": -14.3,
+      "anomaly": 1,
+      "precipitation": 7.7,
+      "precipitationAnomaly": 2,
+      "windSpeed": 5.6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -85,
+      "longitude": -135,
+      "temperature": -14,
+      "anomaly": 0.7,
+      "precipitation": 13.8,
+      "precipitationAnomaly": 4.3,
+      "windSpeed": 9.5,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -85,
+      "longitude": -120,
+      "temperature": -20.2,
+      "anomaly": 0.7,
+      "precipitation": 17.6,
+      "precipitationAnomaly": 5.1,
+      "windSpeed": 9.4,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": -85,
+      "longitude": -105,
+      "temperature": -29.1,
+      "anomaly": 0.7,
+      "precipitation": 10.7,
+      "precipitationAnomaly": 1.7,
+      "windSpeed": 5.6,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -85,
+      "longitude": -90,
+      "temperature": -26.6,
+      "anomaly": 0.6,
+      "precipitation": 6.6,
+      "precipitationAnomaly": -1.6,
+      "windSpeed": 4.1,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -85,
+      "longitude": -75,
+      "temperature": -24.5,
+      "anomaly": 0.2,
+      "precipitation": 2.9,
+      "precipitationAnomaly": -1,
+      "windSpeed": 5.6,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -85,
+      "longitude": -60,
+      "temperature": -22.3,
+      "anomaly": 0.2,
+      "precipitation": 3.1,
+      "precipitationAnomaly": -1,
+      "windSpeed": 8.6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -85,
+      "longitude": -45,
+      "temperature": -25.2,
+      "anomaly": 0.2,
+      "precipitation": 3.8,
+      "precipitationAnomaly": -0.6,
+      "windSpeed": 6.8,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -85,
+      "longitude": -30,
+      "temperature": -28.7,
+      "anomaly": 0.3,
+      "precipitation": 3.4,
+      "precipitationAnomaly": -0.5,
+      "windSpeed": 7.5,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -85,
+      "longitude": -15,
+      "temperature": -31.8,
+      "anomaly": 0.4,
+      "precipitation": 3.2,
+      "precipitationAnomaly": -0.1,
+      "windSpeed": 7.1,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -85,
+      "longitude": 0,
+      "temperature": -34.6,
+      "anomaly": 0.5,
+      "precipitation": 2.6,
+      "precipitationAnomaly": 0,
+      "windSpeed": 5.9,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -85,
+      "longitude": 15,
+      "temperature": -35.5,
+      "anomaly": 0.6,
+      "precipitation": 2.1,
+      "precipitationAnomaly": 0.1,
+      "windSpeed": 5.2,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -85,
+      "longitude": 30,
+      "temperature": -34.8,
+      "anomaly": 0.5,
+      "precipitation": 2.6,
+      "precipitationAnomaly": 0.1,
+      "windSpeed": 6.9,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -85,
+      "longitude": 45,
+      "temperature": -37.6,
+      "anomaly": 0.5,
+      "precipitation": 2.1,
+      "precipitationAnomaly": 0.1,
+      "windSpeed": 6.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -85,
+      "longitude": 60,
+      "temperature": -39.5,
+      "anomaly": 0.5,
+      "precipitation": 2,
+      "precipitationAnomaly": 0.1,
+      "windSpeed": 5.6,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -85,
+      "longitude": 75,
+      "temperature": -39.5,
+      "anomaly": 0.4,
+      "precipitation": 1.9,
+      "precipitationAnomaly": 0.1,
+      "windSpeed": 5.8,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -85,
+      "longitude": 90,
+      "temperature": -39.5,
+      "anomaly": 0.3,
+      "precipitation": 2,
+      "precipitationAnomaly": 0.1,
+      "windSpeed": 5.6,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -85,
+      "longitude": 105,
+      "temperature": -38.7,
+      "anomaly": 0.2,
+      "precipitation": 1.9,
+      "precipitationAnomaly": 0.1,
+      "windSpeed": 6.2,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -85,
+      "longitude": 120,
+      "temperature": -37.1,
+      "anomaly": 0.3,
+      "precipitation": 1.9,
+      "precipitationAnomaly": 0.3,
+      "windSpeed": 6.8,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -85,
+      "longitude": 135,
+      "temperature": -34.7,
+      "anomaly": 0.5,
+      "precipitation": 1.7,
+      "precipitationAnomaly": 0.4,
+      "windSpeed": 7,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -85,
+      "longitude": 150,
+      "temperature": -31.6,
+      "anomaly": 0.6,
+      "precipitation": 2,
+      "precipitationAnomaly": 0.4,
+      "windSpeed": 7,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": -85,
+      "longitude": 165,
+      "temperature": -19.3,
+      "anomaly": 1.9,
+      "precipitation": 2.7,
+      "precipitationAnomaly": 0.2,
+      "windSpeed": 3.2,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -70,
+      "longitude": -180,
+      "temperature": -5.6,
+      "anomaly": 0.3,
+      "precipitation": 50.4,
+      "precipitationAnomaly": 3.7,
+      "windSpeed": 7.8,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -70,
+      "longitude": -165,
+      "temperature": -3.9,
+      "anomaly": 0.8,
+      "precipitation": 48,
+      "precipitationAnomaly": 2.6,
+      "windSpeed": 7.4,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -70,
+      "longitude": -150,
+      "temperature": -3.3,
+      "anomaly": 1.1,
+      "precipitation": 49.6,
+      "precipitationAnomaly": 5.1,
+      "windSpeed": 7.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": -135,
+      "temperature": -2.8,
+      "anomaly": 1.3,
+      "precipitation": 50.6,
+      "precipitationAnomaly": 4.5,
+      "windSpeed": 7.5,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": -120,
+      "temperature": -2.9,
+      "anomaly": 1.2,
+      "precipitation": 52.4,
+      "precipitationAnomaly": 7.1,
+      "windSpeed": 7.5,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -70,
+      "longitude": -105,
+      "temperature": -2.8,
+      "anomaly": 1,
+      "precipitation": 50.8,
+      "precipitationAnomaly": 7.9,
+      "windSpeed": 7.5,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -70,
+      "longitude": -90,
+      "temperature": -3.8,
+      "anomaly": 0.4,
+      "precipitation": 42.5,
+      "precipitationAnomaly": 1.6,
+      "windSpeed": 6.8,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": -75,
+      "temperature": -8,
+      "anomaly": 0.3,
+      "precipitation": 62,
+      "precipitationAnomaly": 3.3,
+      "windSpeed": 5.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": -60,
+      "temperature": -8.9,
+      "anomaly": -0.1,
+      "precipitation": 36.7,
+      "precipitationAnomaly": -5.5,
+      "windSpeed": 6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -70,
+      "longitude": -45,
+      "temperature": -5.9,
+      "anomaly": -0.3,
+      "precipitation": 31.1,
+      "precipitationAnomaly": 1.4,
+      "windSpeed": 6.5,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": -30,
+      "temperature": -5.3,
+      "anomaly": -0.3,
+      "precipitation": 34.4,
+      "precipitationAnomaly": 1.7,
+      "windSpeed": 6.6,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -70,
+      "longitude": -15,
+      "temperature": -5.4,
+      "anomaly": -0.3,
+      "precipitation": 39.2,
+      "precipitationAnomaly": 0.8,
+      "windSpeed": 7.1,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -70,
+      "longitude": 0,
+      "temperature": -9.3,
+      "anomaly": 0.7,
+      "precipitation": 42.4,
+      "precipitationAnomaly": 1.9,
+      "windSpeed": 7.5,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": 15,
+      "temperature": -9.5,
+      "anomaly": 0.5,
+      "precipitation": 36.5,
+      "precipitationAnomaly": 6.1,
+      "windSpeed": 7.6,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -70,
+      "longitude": 30,
+      "temperature": -9.1,
+      "anomaly": 0.4,
+      "precipitation": 22,
+      "precipitationAnomaly": 2.5,
+      "windSpeed": 6.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": 45,
+      "temperature": -24.6,
+      "anomaly": 0.1,
+      "precipitation": 11.3,
+      "precipitationAnomaly": 1.7,
+      "windSpeed": 9.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": 60,
+      "temperature": -30,
+      "anomaly": 0.3,
+      "precipitation": 9.3,
+      "precipitationAnomaly": 0.4,
+      "windSpeed": 8.7,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": 75,
+      "temperature": -11.2,
+      "anomaly": 0,
+      "precipitation": 30.2,
+      "precipitationAnomaly": 1.9,
+      "windSpeed": 6.1,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -70,
+      "longitude": 90,
+      "temperature": -28.3,
+      "anomaly": 0.3,
+      "precipitation": 11.2,
+      "precipitationAnomaly": 1.2,
+      "windSpeed": 9.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": 105,
+      "temperature": -30.5,
+      "anomaly": 0.2,
+      "precipitation": 10.6,
+      "precipitationAnomaly": 0.9,
+      "windSpeed": 9.1,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": 120,
+      "temperature": -27.9,
+      "anomaly": 0.3,
+      "precipitation": 10.9,
+      "precipitationAnomaly": 0.7,
+      "windSpeed": 8,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": 135,
+      "temperature": -31.7,
+      "anomaly": 0.5,
+      "precipitation": 10.5,
+      "precipitationAnomaly": 0.4,
+      "windSpeed": 7.2,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -70,
+      "longitude": 150,
+      "temperature": -21.5,
+      "anomaly": 0.7,
+      "precipitation": 15.3,
+      "precipitationAnomaly": -2.2,
+      "windSpeed": 8.8,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -70,
+      "longitude": 165,
+      "temperature": -7.7,
+      "anomaly": -0.2,
+      "precipitation": 34.4,
+      "precipitationAnomaly": -3.4,
+      "windSpeed": 5.9,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -55,
+      "longitude": -180,
+      "temperature": 6,
+      "anomaly": -0.1,
+      "precipitation": 117.7,
+      "precipitationAnomaly": 21.3,
+      "windSpeed": 11.6,
+      "windSpeedAnomaly": 0.7
+    },
+    {
+      "latitude": -55,
+      "longitude": -165,
+      "temperature": 4.9,
+      "anomaly": 0.1,
+      "precipitation": 85.8,
+      "precipitationAnomaly": 10.2,
+      "windSpeed": 10.6,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -55,
+      "longitude": -150,
+      "temperature": 4.8,
+      "anomaly": 0.9,
+      "precipitation": 83.4,
+      "precipitationAnomaly": 10.7,
+      "windSpeed": 10.3,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -55,
+      "longitude": -135,
+      "temperature": 5,
+      "anomaly": 1.1,
+      "precipitation": 68.6,
+      "precipitationAnomaly": 0.4,
+      "windSpeed": 9.9,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -55,
+      "longitude": -120,
+      "temperature": 6.4,
+      "anomaly": 1.3,
+      "precipitation": 66.3,
+      "precipitationAnomaly": -11.1,
+      "windSpeed": 10.1,
+      "windSpeedAnomaly": -0.5
+    },
+    {
+      "latitude": -55,
+      "longitude": -105,
+      "temperature": 6.1,
+      "anomaly": 1.2,
+      "precipitation": 65.7,
+      "precipitationAnomaly": -11.9,
+      "windSpeed": 9.9,
+      "windSpeedAnomaly": -0.8
+    },
+    {
+      "latitude": -55,
+      "longitude": -90,
+      "temperature": 5.8,
+      "anomaly": 0.7,
+      "precipitation": 64.6,
+      "precipitationAnomaly": -16.5,
+      "windSpeed": 10.1,
+      "windSpeedAnomaly": -0.7
+    },
+    {
+      "latitude": -55,
+      "longitude": -75,
+      "temperature": 5.7,
+      "anomaly": 0.5,
+      "precipitation": 90.3,
+      "precipitationAnomaly": -9,
+      "windSpeed": 10.7,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": -55,
+      "longitude": -60,
+      "temperature": 4.5,
+      "anomaly": -0.1,
+      "precipitation": 55.7,
+      "precipitationAnomaly": -0.3,
+      "windSpeed": 10,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -55,
+      "longitude": -45,
+      "temperature": 1.9,
+      "anomaly": 0,
+      "precipitation": 60,
+      "precipitationAnomaly": -4.5,
+      "windSpeed": 9.6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -55,
+      "longitude": -30,
+      "temperature": 0.3,
+      "anomaly": -0.2,
+      "precipitation": 75.2,
+      "precipitationAnomaly": 3.5,
+      "windSpeed": 10.1,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -55,
+      "longitude": -15,
+      "temperature": 0.1,
+      "anomaly": -0.2,
+      "precipitation": 76.3,
+      "precipitationAnomaly": 1.3,
+      "windSpeed": 10.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -55,
+      "longitude": 0,
+      "temperature": -0.6,
+      "anomaly": 0,
+      "precipitation": 72.7,
+      "precipitationAnomaly": 0.8,
+      "windSpeed": 10.6,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -55,
+      "longitude": 15,
+      "temperature": -0.8,
+      "anomaly": 0.2,
+      "precipitation": 70.6,
+      "precipitationAnomaly": 1.9,
+      "windSpeed": 10.6,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -55,
+      "longitude": 30,
+      "temperature": 0.9,
+      "anomaly": 0.6,
+      "precipitation": 84.3,
+      "precipitationAnomaly": 5.6,
+      "windSpeed": 11.4,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -55,
+      "longitude": 45,
+      "temperature": 0.4,
+      "anomaly": 0.2,
+      "precipitation": 75.1,
+      "precipitationAnomaly": 1.5,
+      "windSpeed": 10.6,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -55,
+      "longitude": 60,
+      "temperature": 1,
+      "anomaly": 0.3,
+      "precipitation": 81.7,
+      "precipitationAnomaly": -2,
+      "windSpeed": 10.9,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -55,
+      "longitude": 75,
+      "temperature": 0.8,
+      "anomaly": 0.6,
+      "precipitation": 83.3,
+      "precipitationAnomaly": 8.9,
+      "windSpeed": 10.7,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -55,
+      "longitude": 90,
+      "temperature": 2.7,
+      "anomaly": 0.6,
+      "precipitation": 102.6,
+      "precipitationAnomaly": 10.3,
+      "windSpeed": 11.6,
+      "windSpeedAnomaly": 0.6
+    },
+    {
+      "latitude": -55,
+      "longitude": 105,
+      "temperature": 1.3,
+      "anomaly": 0.4,
+      "precipitation": 75.8,
+      "precipitationAnomaly": 5,
+      "windSpeed": 10.8,
+      "windSpeedAnomaly": 0.7
+    },
+    {
+      "latitude": -55,
+      "longitude": 120,
+      "temperature": 2.8,
+      "anomaly": 0,
+      "precipitation": 78.7,
+      "precipitationAnomaly": -2.3,
+      "windSpeed": 11.2,
+      "windSpeedAnomaly": 0.5
+    },
+    {
+      "latitude": -55,
+      "longitude": 135,
+      "temperature": 3.7,
+      "anomaly": 0.1,
+      "precipitation": 75.6,
+      "precipitationAnomaly": -1.6,
+      "windSpeed": 10.8,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -55,
+      "longitude": 150,
+      "temperature": 4.2,
+      "anomaly": -0.1,
+      "precipitation": 102.3,
+      "precipitationAnomaly": 12.2,
+      "windSpeed": 11.7,
+      "windSpeedAnomaly": 0.8
+    },
+    {
+      "latitude": -55,
+      "longitude": 165,
+      "temperature": 5.3,
+      "anomaly": -0.3,
+      "precipitation": 124.3,
+      "precipitationAnomaly": 19.2,
+      "windSpeed": 12.1,
+      "windSpeedAnomaly": 0.7
+    },
+    {
+      "latitude": -40,
+      "longitude": -180,
+      "temperature": 14.3,
+      "anomaly": -0.1,
+      "precipitation": 44.8,
+      "precipitationAnomaly": -8.5,
+      "windSpeed": 7.9,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -40,
+      "longitude": -165,
+      "temperature": 12.8,
+      "anomaly": -0.3,
+      "precipitation": 54.4,
+      "precipitationAnomaly": -14,
+      "windSpeed": 8.5,
+      "windSpeedAnomaly": 0.6
+    },
+    {
+      "latitude": -40,
+      "longitude": -150,
+      "temperature": 12.3,
+      "anomaly": -0.1,
+      "precipitation": 61.7,
+      "precipitationAnomaly": -5.9,
+      "windSpeed": 7.8,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -40,
+      "longitude": -135,
+      "temperature": 12.7,
+      "anomaly": 0.5,
+      "precipitation": 73.4,
+      "precipitationAnomaly": -1,
+      "windSpeed": 7.4,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -40,
+      "longitude": -120,
+      "temperature": 13.1,
+      "anomaly": 1.1,
+      "precipitation": 76.3,
+      "precipitationAnomaly": -7.2,
+      "windSpeed": 7.6,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -40,
+      "longitude": -105,
+      "temperature": 12.7,
+      "anomaly": 0.9,
+      "precipitation": 67.3,
+      "precipitationAnomaly": -3.3,
+      "windSpeed": 7.3,
+      "windSpeedAnomaly": -0.6
+    },
+    {
+      "latitude": -40,
+      "longitude": -90,
+      "temperature": 11.9,
+      "anomaly": 0.5,
+      "precipitation": 49.9,
+      "precipitationAnomaly": -1.6,
+      "windSpeed": 7.2,
+      "windSpeedAnomaly": -0.6
+    },
+    {
+      "latitude": -40,
+      "longitude": -75,
+      "temperature": 12.1,
+      "anomaly": 0.5,
+      "precipitation": 42.5,
+      "precipitationAnomaly": 1.8,
+      "windSpeed": 7.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -40,
+      "longitude": -60,
+      "temperature": 13.8,
+      "anomaly": -0.1,
+      "precipitation": 57.3,
+      "precipitationAnomaly": 9.3,
+      "windSpeed": 7.2,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -40,
+      "longitude": -45,
+      "temperature": 13.4,
+      "anomaly": 0,
+      "precipitation": 97.3,
+      "precipitationAnomaly": 1.3,
+      "windSpeed": 8.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -40,
+      "longitude": -30,
+      "temperature": 12.4,
+      "anomaly": 0.1,
+      "precipitation": 111.3,
+      "precipitationAnomaly": -2.2,
+      "windSpeed": 9.2,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -40,
+      "longitude": -15,
+      "temperature": 12,
+      "anomaly": 0.9,
+      "precipitation": 101.2,
+      "precipitationAnomaly": 4.1,
+      "windSpeed": 9.3,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -40,
+      "longitude": 0,
+      "temperature": 11.9,
+      "anomaly": 1,
+      "precipitation": 75.1,
+      "precipitationAnomaly": 12.9,
+      "windSpeed": 9,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -40,
+      "longitude": 15,
+      "temperature": 13.9,
+      "anomaly": 1.2,
+      "precipitation": 54.8,
+      "precipitationAnomaly": 3.3,
+      "windSpeed": 8.8,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -40,
+      "longitude": 30,
+      "temperature": 14.6,
+      "anomaly": 0.8,
+      "precipitation": 68.3,
+      "precipitationAnomaly": -7.6,
+      "windSpeed": 8.7,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -40,
+      "longitude": 45,
+      "temperature": 13.4,
+      "anomaly": 1.2,
+      "precipitation": 113.5,
+      "precipitationAnomaly": 10.2,
+      "windSpeed": 9.5,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -40,
+      "longitude": 60,
+      "temperature": 12.7,
+      "anomaly": 0.2,
+      "precipitation": 107.1,
+      "precipitationAnomaly": 3.6,
+      "windSpeed": 9.8,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -40,
+      "longitude": 75,
+      "temperature": 12.1,
+      "anomaly": 0.3,
+      "precipitation": 91.8,
+      "precipitationAnomaly": 8.2,
+      "windSpeed": 9.4,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -40,
+      "longitude": 90,
+      "temperature": 12,
+      "anomaly": 0.7,
+      "precipitation": 74,
+      "precipitationAnomaly": 8.4,
+      "windSpeed": 9.1,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": -40,
+      "longitude": 105,
+      "temperature": 11.8,
+      "anomaly": 0.8,
+      "precipitation": 40.7,
+      "precipitationAnomaly": -5.7,
+      "windSpeed": 8,
+      "windSpeedAnomaly": -0.8
+    },
+    {
+      "latitude": -40,
+      "longitude": 120,
+      "temperature": 12.3,
+      "anomaly": 0.9,
+      "precipitation": 36.7,
+      "precipitationAnomaly": -3.5,
+      "windSpeed": 7.6,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": -40,
+      "longitude": 135,
+      "temperature": 12.5,
+      "anomaly": 0.6,
+      "precipitation": 40.9,
+      "precipitationAnomaly": 1,
+      "windSpeed": 7.7,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -40,
+      "longitude": 150,
+      "temperature": 16.3,
+      "anomaly": 1.6,
+      "precipitation": 60.2,
+      "precipitationAnomaly": 5.7,
+      "windSpeed": 8.7,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -40,
+      "longitude": 165,
+      "temperature": 13.9,
+      "anomaly": 0.5,
+      "precipitation": 89.1,
+      "precipitationAnomaly": 1.2,
+      "windSpeed": 8.4,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -25,
+      "longitude": -180,
+      "temperature": 21,
+      "anomaly": -0.3,
+      "precipitation": 30.1,
+      "precipitationAnomaly": -34.4,
+      "windSpeed": 6.3,
+      "windSpeedAnomaly": -0.6
+    },
+    {
+      "latitude": -25,
+      "longitude": -165,
+      "temperature": 20.6,
+      "anomaly": -0.5,
+      "precipitation": 30.9,
+      "precipitationAnomaly": -49.2,
+      "windSpeed": 6.5,
+      "windSpeedAnomaly": -0.5
+    },
+    {
+      "latitude": -25,
+      "longitude": -150,
+      "temperature": 20.7,
+      "anomaly": -0.7,
+      "precipitation": 50,
+      "precipitationAnomaly": -60.6,
+      "windSpeed": 6.4,
+      "windSpeedAnomaly": -0.5
+    },
+    {
+      "latitude": -25,
+      "longitude": -135,
+      "temperature": 21.3,
+      "anomaly": -0.6,
+      "precipitation": 95.4,
+      "precipitationAnomaly": -49.2,
+      "windSpeed": 6.5,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -25,
+      "longitude": -120,
+      "temperature": 21.6,
+      "anomaly": -0.2,
+      "precipitation": 100.3,
+      "precipitationAnomaly": 10.6,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -25,
+      "longitude": -105,
+      "temperature": 20.6,
+      "anomaly": 0.5,
+      "precipitation": 39.6,
+      "precipitationAnomaly": 5.3,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -25,
+      "longitude": -90,
+      "temperature": 18.6,
+      "anomaly": 0.9,
+      "precipitation": 21.7,
+      "precipitationAnomaly": -1.7,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -25,
+      "longitude": -75,
+      "temperature": 17,
+      "anomaly": 1.2,
+      "precipitation": 3.5,
+      "precipitationAnomaly": -4.2,
+      "windSpeed": 7.5,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -25,
+      "longitude": -60,
+      "temperature": 25.1,
+      "anomaly": 0,
+      "precipitation": 193.7,
+      "precipitationAnomaly": 38.3,
+      "windSpeed": 3.9,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -25,
+      "longitude": -45,
+      "temperature": 23.6,
+      "anomaly": 0.8,
+      "precipitation": 120.3,
+      "precipitationAnomaly": 37.5,
+      "windSpeed": 6.8,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -25,
+      "longitude": -30,
+      "temperature": 22.6,
+      "anomaly": 0.5,
+      "precipitation": 103.9,
+      "precipitationAnomaly": -3.2,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -25,
+      "longitude": -15,
+      "temperature": 21.4,
+      "anomaly": 0.9,
+      "precipitation": 35.2,
+      "precipitationAnomaly": 5.1,
+      "windSpeed": 5.8,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -25,
+      "longitude": 0,
+      "temperature": 19.2,
+      "anomaly": 1.1,
+      "precipitation": 13.9,
+      "precipitationAnomaly": -1.1,
+      "windSpeed": 6.6,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -25,
+      "longitude": 15,
+      "temperature": 20.4,
+      "anomaly": 0.9,
+      "precipitation": 1.8,
+      "precipitationAnomaly": -0.9,
+      "windSpeed": 4.7,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -25,
+      "longitude": 30,
+      "temperature": 22,
+      "anomaly": 1,
+      "precipitation": 85.3,
+      "precipitationAnomaly": -14.5,
+      "windSpeed": 2.3,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -25,
+      "longitude": 45,
+      "temperature": 26.1,
+      "anomaly": 0.7,
+      "precipitation": 60.5,
+      "precipitationAnomaly": -17.6,
+      "windSpeed": 3.7,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -25,
+      "longitude": 60,
+      "temperature": 22.9,
+      "anomaly": 0.7,
+      "precipitation": 61.4,
+      "precipitationAnomaly": 17.2,
+      "windSpeed": 6.3,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -25,
+      "longitude": 75,
+      "temperature": 21.6,
+      "anomaly": 1,
+      "precipitation": 37.6,
+      "precipitationAnomaly": 8.5,
+      "windSpeed": 5.9,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -25,
+      "longitude": 90,
+      "temperature": 20.7,
+      "anomaly": 1.3,
+      "precipitation": 26.7,
+      "precipitationAnomaly": 3.4,
+      "windSpeed": 6.3,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -25,
+      "longitude": 105,
+      "temperature": 20.1,
+      "anomaly": 0.9,
+      "precipitation": 16.3,
+      "precipitationAnomaly": 2.3,
+      "windSpeed": 6.8,
+      "windSpeedAnomaly": -0.6
+    },
+    {
+      "latitude": -25,
+      "longitude": 120,
+      "temperature": 29.7,
+      "anomaly": 0.9,
+      "precipitation": 12.4,
+      "precipitationAnomaly": 3.8,
+      "windSpeed": 5,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -25,
+      "longitude": 135,
+      "temperature": 28.7,
+      "anomaly": 0.4,
+      "precipitation": 30.1,
+      "precipitationAnomaly": 11.3,
+      "windSpeed": 4.2,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": -25,
+      "longitude": 150,
+      "temperature": 25.8,
+      "anomaly": 0.7,
+      "precipitation": 52.3,
+      "precipitationAnomaly": -3.7,
+      "windSpeed": 2.8,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -25,
+      "longitude": 165,
+      "temperature": 21.5,
+      "anomaly": 0.2,
+      "precipitation": 27.2,
+      "precipitationAnomaly": -17.3,
+      "windSpeed": 6.3,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": -10,
+      "longitude": -180,
+      "temperature": 28,
+      "anomaly": 0.6,
+      "precipitation": 291.4,
+      "precipitationAnomaly": -17.3,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 2.1
+    },
+    {
+      "latitude": -10,
+      "longitude": -165,
+      "temperature": 28.3,
+      "anomaly": 1,
+      "precipitation": 385.1,
+      "precipitationAnomaly": 146.7,
+      "windSpeed": 5.8,
+      "windSpeedAnomaly": 1
+    },
+    {
+      "latitude": -10,
+      "longitude": -150,
+      "temperature": 28.4,
+      "anomaly": 1.5,
+      "precipitation": 184.2,
+      "precipitationAnomaly": 69.3,
+      "windSpeed": 5.6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -10,
+      "longitude": -135,
+      "temperature": 27.9,
+      "anomaly": 1.9,
+      "precipitation": 46.7,
+      "precipitationAnomaly": 3.3,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -10,
+      "longitude": -120,
+      "temperature": 26.5,
+      "anomaly": 2.1,
+      "precipitation": 27.8,
+      "precipitationAnomaly": 4.1,
+      "windSpeed": 7.7,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -10,
+      "longitude": -105,
+      "temperature": 24.3,
+      "anomaly": 2.1,
+      "precipitation": 23.9,
+      "precipitationAnomaly": 2.8,
+      "windSpeed": 7.9,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -10,
+      "longitude": -90,
+      "temperature": 23.4,
+      "anomaly": 3.1,
+      "precipitation": 18.9,
+      "precipitationAnomaly": 0.3,
+      "windSpeed": 6.9,
+      "windSpeedAnomaly": 0.6
+    },
+    {
+      "latitude": -10,
+      "longitude": -75,
+      "temperature": 26.3,
+      "anomaly": 1.9,
+      "precipitation": 232.6,
+      "precipitationAnomaly": -32.1,
+      "windSpeed": 1.1,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -10,
+      "longitude": -60,
+      "temperature": 28,
+      "anomaly": 2.3,
+      "precipitation": 221.9,
+      "precipitationAnomaly": -52.4,
+      "windSpeed": 1.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -10,
+      "longitude": -45,
+      "temperature": 31.5,
+      "anomaly": 3.2,
+      "precipitation": 41.7,
+      "precipitationAnomaly": -38.7,
+      "windSpeed": 2.5,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -10,
+      "longitude": -30,
+      "temperature": 26.4,
+      "anomaly": 1,
+      "precipitation": 21.7,
+      "precipitationAnomaly": 1.7,
+      "windSpeed": 7.1,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -10,
+      "longitude": -15,
+      "temperature": 23.9,
+      "anomaly": 0.9,
+      "precipitation": 16.4,
+      "precipitationAnomaly": -0.7,
+      "windSpeed": 6.9,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -10,
+      "longitude": 0,
+      "temperature": 23,
+      "anomaly": 0.8,
+      "precipitation": 10.7,
+      "precipitationAnomaly": -1.3,
+      "windSpeed": 5.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -10,
+      "longitude": 15,
+      "temperature": 21.8,
+      "anomaly": 1.5,
+      "precipitation": 211.9,
+      "precipitationAnomaly": -7.1,
+      "windSpeed": 1.5,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": -10,
+      "longitude": 30,
+      "temperature": 22.4,
+      "anomaly": 1.3,
+      "precipitation": 149.2,
+      "precipitationAnomaly": -14.7,
+      "windSpeed": 2.1,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": -10,
+      "longitude": 45,
+      "temperature": 27.3,
+      "anomaly": 1,
+      "precipitation": 60.1,
+      "precipitationAnomaly": 0.8,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": -10,
+      "longitude": 60,
+      "temperature": 27.6,
+      "anomaly": 1.3,
+      "precipitation": 240.7,
+      "precipitationAnomaly": 74.3,
+      "windSpeed": 6.8,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": -10,
+      "longitude": 75,
+      "temperature": 27.8,
+      "anomaly": 1.2,
+      "precipitation": 150.5,
+      "precipitationAnomaly": -62.9,
+      "windSpeed": 6.6,
+      "windSpeedAnomaly": -0.5
+    },
+    {
+      "latitude": -10,
+      "longitude": 90,
+      "temperature": 27.1,
+      "anomaly": 0.9,
+      "precipitation": 34.5,
+      "precipitationAnomaly": -79.1,
+      "windSpeed": 7.6,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": -10,
+      "longitude": 105,
+      "temperature": 27.5,
+      "anomaly": 0.8,
+      "precipitation": 31.8,
+      "precipitationAnomaly": -48.3,
+      "windSpeed": 6.9,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -10,
+      "longitude": 120,
+      "temperature": 27.4,
+      "anomaly": 0.8,
+      "precipitation": 62.2,
+      "precipitationAnomaly": -80.6,
+      "windSpeed": 3.1,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": -10,
+      "longitude": 135,
+      "temperature": 27.9,
+      "anomaly": 0.3,
+      "precipitation": 11.6,
+      "precipitationAnomaly": -35.3,
+      "windSpeed": 5.3,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": -10,
+      "longitude": 150,
+      "temperature": 26.6,
+      "anomaly": 0.6,
+      "precipitation": 109.3,
+      "precipitationAnomaly": -68,
+      "windSpeed": 2.8,
+      "windSpeedAnomaly": 0.5
+    },
+    {
+      "latitude": -10,
+      "longitude": 165,
+      "temperature": 27.9,
+      "anomaly": 0.6,
+      "precipitation": 168.3,
+      "precipitationAnomaly": -151.1,
+      "windSpeed": 6.9,
+      "windSpeedAnomaly": 2
+    },
+    {
+      "latitude": 5,
+      "longitude": -180,
+      "temperature": 28.4,
+      "anomaly": 1,
+      "precipitation": 264.3,
+      "precipitationAnomaly": 52.7,
+      "windSpeed": 4.3,
+      "windSpeedAnomaly": -0.9
+    },
+    {
+      "latitude": 5,
+      "longitude": -165,
+      "temperature": 28.4,
+      "anomaly": 1.3,
+      "precipitation": 358.2,
+      "precipitationAnomaly": 183.1,
+      "windSpeed": 4.2,
+      "windSpeedAnomaly": -1.5
+    },
+    {
+      "latitude": 5,
+      "longitude": -150,
+      "temperature": 28.3,
+      "anomaly": 1.8,
+      "precipitation": 435.6,
+      "precipitationAnomaly": 296.1,
+      "windSpeed": 4,
+      "windSpeedAnomaly": -1.9
+    },
+    {
+      "latitude": 5,
+      "longitude": -135,
+      "temperature": 28.1,
+      "anomaly": 2.1,
+      "precipitation": 452.5,
+      "precipitationAnomaly": 336.1,
+      "windSpeed": 3.7,
+      "windSpeedAnomaly": -2.4
+    },
+    {
+      "latitude": 5,
+      "longitude": -120,
+      "temperature": 27.9,
+      "anomaly": 2.1,
+      "precipitation": 480,
+      "precipitationAnomaly": 333,
+      "windSpeed": 4,
+      "windSpeedAnomaly": -2.2
+    },
+    {
+      "latitude": 5,
+      "longitude": -105,
+      "temperature": 27.7,
+      "anomaly": 2.1,
+      "precipitation": 453.6,
+      "precipitationAnomaly": 204.1,
+      "windSpeed": 3.8,
+      "windSpeedAnomaly": -1.7
+    },
+    {
+      "latitude": 5,
+      "longitude": -90,
+      "temperature": 28,
+      "anomaly": 2.3,
+      "precipitation": 288.5,
+      "precipitationAnomaly": 3.6,
+      "windSpeed": 3.1,
+      "windSpeedAnomaly": -1.4
+    },
+    {
+      "latitude": 5,
+      "longitude": -75,
+      "temperature": 21.3,
+      "anomaly": 1.8,
+      "precipitation": 148.5,
+      "precipitationAnomaly": -115.9,
+      "windSpeed": 1.3,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 5,
+      "longitude": -60,
+      "temperature": 23.9,
+      "anomaly": 2.1,
+      "precipitation": 47.6,
+      "precipitationAnomaly": -52.7,
+      "windSpeed": 3.2,
+      "windSpeedAnomaly": 0.7
+    },
+    {
+      "latitude": 5,
+      "longitude": -45,
+      "temperature": 27.8,
+      "anomaly": 1,
+      "precipitation": 130.8,
+      "precipitationAnomaly": -69.2,
+      "windSpeed": 6.3,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": 5,
+      "longitude": -30,
+      "temperature": 27.2,
+      "anomaly": 1.1,
+      "precipitation": 367,
+      "precipitationAnomaly": -63.3,
+      "windSpeed": 4.9,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 5,
+      "longitude": -15,
+      "temperature": 27.5,
+      "anomaly": 0.9,
+      "precipitation": 217,
+      "precipitationAnomaly": 28.9,
+      "windSpeed": 3.6,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 5,
+      "longitude": 0,
+      "temperature": 28.2,
+      "anomaly": 0.7,
+      "precipitation": 52.5,
+      "precipitationAnomaly": 9.7,
+      "windSpeed": 3.9,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 5,
+      "longitude": 15,
+      "temperature": 25.2,
+      "anomaly": 1.2,
+      "precipitation": 85.9,
+      "precipitationAnomaly": 6.9,
+      "windSpeed": 1.5,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 5,
+      "longitude": 30,
+      "temperature": 25.7,
+      "anomaly": 1.4,
+      "precipitation": 99.1,
+      "precipitationAnomaly": 11.7,
+      "windSpeed": 1.9,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 5,
+      "longitude": 45,
+      "temperature": 28.6,
+      "anomaly": 0.8,
+      "precipitation": 47.3,
+      "precipitationAnomaly": 18.1,
+      "windSpeed": 3.6,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 5,
+      "longitude": 60,
+      "temperature": 27.9,
+      "anomaly": 1.1,
+      "precipitation": 293.4,
+      "precipitationAnomaly": 99.8,
+      "windSpeed": 3.8,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 5,
+      "longitude": 75,
+      "temperature": 27.9,
+      "anomaly": 1,
+      "precipitation": 425.1,
+      "precipitationAnomaly": 129.1,
+      "windSpeed": 4.4,
+      "windSpeedAnomaly": -0.5
+    },
+    {
+      "latitude": 5,
+      "longitude": 90,
+      "temperature": 27.9,
+      "anomaly": 1,
+      "precipitation": 401.9,
+      "precipitationAnomaly": 70,
+      "windSpeed": 3.8,
+      "windSpeedAnomaly": -0.8
+    },
+    {
+      "latitude": 5,
+      "longitude": 105,
+      "temperature": 28.3,
+      "anomaly": 1.1,
+      "precipitation": 363.1,
+      "precipitationAnomaly": 62.8,
+      "windSpeed": 3.9,
+      "windSpeedAnomaly": -0.8
+    },
+    {
+      "latitude": 5,
+      "longitude": 120,
+      "temperature": 28.6,
+      "anomaly": 0.9,
+      "precipitation": 202.9,
+      "precipitationAnomaly": -9.5,
+      "windSpeed": 3,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": 5,
+      "longitude": 135,
+      "temperature": 28.5,
+      "anomaly": 0.8,
+      "precipitation": 186.2,
+      "precipitationAnomaly": -51.2,
+      "windSpeed": 3.9,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 5,
+      "longitude": 150,
+      "temperature": 28.4,
+      "anomaly": 0.7,
+      "precipitation": 249.8,
+      "precipitationAnomaly": -26.9,
+      "windSpeed": 4.1,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 5,
+      "longitude": 165,
+      "temperature": 28.4,
+      "anomaly": 0.8,
+      "precipitation": 250.7,
+      "precipitationAnomaly": -19.1,
+      "windSpeed": 4.5,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 20,
+      "longitude": -180,
+      "temperature": 26.4,
+      "anomaly": 0.4,
+      "precipitation": 61.4,
+      "precipitationAnomaly": -18.1,
+      "windSpeed": 8.8,
+      "windSpeedAnomaly": 0.7
+    },
+    {
+      "latitude": 20,
+      "longitude": -165,
+      "temperature": 25.7,
+      "anomaly": 0.5,
+      "precipitation": 51.2,
+      "precipitationAnomaly": -38.9,
+      "windSpeed": 8.3,
+      "windSpeedAnomaly": 0.5
+    },
+    {
+      "latitude": 20,
+      "longitude": -150,
+      "temperature": 24.5,
+      "anomaly": 0.8,
+      "precipitation": 43.8,
+      "precipitationAnomaly": -9.9,
+      "windSpeed": 8.2,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 20,
+      "longitude": -135,
+      "temperature": 24.1,
+      "anomaly": 1.5,
+      "precipitation": 38.9,
+      "precipitationAnomaly": -8.1,
+      "windSpeed": 8.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 20,
+      "longitude": -120,
+      "temperature": 24.7,
+      "anomaly": 2,
+      "precipitation": 50,
+      "precipitationAnomaly": 17.8,
+      "windSpeed": 6.9,
+      "windSpeedAnomaly": 0.6
+    },
+    {
+      "latitude": 20,
+      "longitude": -105,
+      "temperature": 21.4,
+      "anomaly": 1,
+      "precipitation": 70.2,
+      "precipitationAnomaly": 15.9,
+      "windSpeed": 1.5,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 20,
+      "longitude": -90,
+      "temperature": 25.1,
+      "anomaly": 1.2,
+      "precipitation": 60.6,
+      "precipitationAnomaly": 17.7,
+      "windSpeed": 2.5,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 20,
+      "longitude": -75,
+      "temperature": 27.2,
+      "anomaly": 1.7,
+      "precipitation": 52.3,
+      "precipitationAnomaly": -2.2,
+      "windSpeed": 2.1,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 20,
+      "longitude": -60,
+      "temperature": 27.3,
+      "anomaly": 1,
+      "precipitation": 90.4,
+      "precipitationAnomaly": -11,
+      "windSpeed": 6.1,
+      "windSpeedAnomaly": -0.6
+    },
+    {
+      "latitude": 20,
+      "longitude": -45,
+      "temperature": 26.3,
+      "anomaly": 0.9,
+      "precipitation": 72.6,
+      "precipitationAnomaly": -16.8,
+      "windSpeed": 6.6,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 20,
+      "longitude": -30,
+      "temperature": 24.9,
+      "anomaly": 0.7,
+      "precipitation": 30.4,
+      "precipitationAnomaly": 0.8,
+      "windSpeed": 6.6,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 20,
+      "longitude": -15,
+      "temperature": 25.6,
+      "anomaly": 1.4,
+      "precipitation": 4.6,
+      "precipitationAnomaly": 3,
+      "windSpeed": 4.5,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 20,
+      "longitude": 0,
+      "temperature": 24.1,
+      "anomaly": 1.5,
+      "precipitation": 0.6,
+      "precipitationAnomaly": 0.4,
+      "windSpeed": 4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 20,
+      "longitude": 15,
+      "temperature": 21.2,
+      "anomaly": 2,
+      "precipitation": 0,
+      "precipitationAnomaly": 0,
+      "windSpeed": 3.1,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 20,
+      "longitude": 30,
+      "temperature": 22.2,
+      "anomaly": 1.2,
+      "precipitation": 0,
+      "precipitationAnomaly": 0,
+      "windSpeed": 5.1,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 20,
+      "longitude": 45,
+      "temperature": 22.2,
+      "anomaly": 2.1,
+      "precipitation": 2.6,
+      "precipitationAnomaly": 1.4,
+      "windSpeed": 3.9,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 20,
+      "longitude": 60,
+      "temperature": 26.5,
+      "anomaly": 1,
+      "precipitation": 8.3,
+      "precipitationAnomaly": 0.8,
+      "windSpeed": 4.7,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": 20,
+      "longitude": 75,
+      "temperature": 23.9,
+      "anomaly": 1.4,
+      "precipitation": 29.6,
+      "precipitationAnomaly": 8.5,
+      "windSpeed": 2,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 20,
+      "longitude": 90,
+      "temperature": 27.1,
+      "anomaly": 0.7,
+      "precipitation": 42.8,
+      "precipitationAnomaly": -20.8,
+      "windSpeed": 4.4,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 20,
+      "longitude": 105,
+      "temperature": 17.8,
+      "anomaly": 2.6,
+      "precipitation": 50,
+      "precipitationAnomaly": 11.8,
+      "windSpeed": 1.1,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 20,
+      "longitude": 120,
+      "temperature": 26.9,
+      "anomaly": 1,
+      "precipitation": 73.9,
+      "precipitationAnomaly": -75.9,
+      "windSpeed": 10.2,
+      "windSpeedAnomaly": -1.9
+    },
+    {
+      "latitude": 20,
+      "longitude": 135,
+      "temperature": 27.7,
+      "anomaly": 0.4,
+      "precipitation": 89.8,
+      "precipitationAnomaly": -72,
+      "windSpeed": 7.3,
+      "windSpeedAnomaly": -0.7
+    },
+    {
+      "latitude": 20,
+      "longitude": 150,
+      "temperature": 27.6,
+      "anomaly": 0.2,
+      "precipitation": 81.3,
+      "precipitationAnomaly": -11.9,
+      "windSpeed": 8,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 20,
+      "longitude": 165,
+      "temperature": 27.1,
+      "anomaly": 0.3,
+      "precipitation": 79.2,
+      "precipitationAnomaly": 1.6,
+      "windSpeed": 8.7,
+      "windSpeedAnomaly": 0.6
+    },
+    {
+      "latitude": 35,
+      "longitude": -180,
+      "temperature": 18.3,
+      "anomaly": 0.8,
+      "precipitation": 111.4,
+      "precipitationAnomaly": -32.3,
+      "windSpeed": 8.7,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": 35,
+      "longitude": -165,
+      "temperature": 17.8,
+      "anomaly": 0.4,
+      "precipitation": 106.9,
+      "precipitationAnomaly": -35.6,
+      "windSpeed": 9,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": -150,
+      "temperature": 18.2,
+      "anomaly": 0.4,
+      "precipitation": 122.7,
+      "precipitationAnomaly": 3.3,
+      "windSpeed": 8.6,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 35,
+      "longitude": -135,
+      "temperature": 17.7,
+      "anomaly": 0.6,
+      "precipitation": 73.5,
+      "precipitationAnomaly": 10.5,
+      "windSpeed": 7.5,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": -120,
+      "temperature": 8.9,
+      "anomaly": 0.8,
+      "precipitation": 38.7,
+      "precipitationAnomaly": 4.8,
+      "windSpeed": 1.9,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": -105,
+      "temperature": 6.3,
+      "anomaly": -0.7,
+      "precipitation": 41.4,
+      "precipitationAnomaly": 14.3,
+      "windSpeed": 5.2,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 35,
+      "longitude": -90,
+      "temperature": 11.3,
+      "anomaly": 0.1,
+      "precipitation": 120.4,
+      "precipitationAnomaly": -2.9,
+      "windSpeed": 3.2,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 35,
+      "longitude": -75,
+      "temperature": 19.1,
+      "anomaly": 0.6,
+      "precipitation": 199.3,
+      "precipitationAnomaly": 44.6,
+      "windSpeed": 8.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": -60,
+      "temperature": 20.8,
+      "anomaly": 0.6,
+      "precipitation": 162.9,
+      "precipitationAnomaly": 26.1,
+      "windSpeed": 8.5,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 35,
+      "longitude": -45,
+      "temperature": 21.1,
+      "anomaly": 0.7,
+      "precipitation": 150.5,
+      "precipitationAnomaly": 10.7,
+      "windSpeed": 8.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": -30,
+      "temperature": 20.4,
+      "anomaly": 0.6,
+      "precipitation": 112.1,
+      "precipitationAnomaly": 4.1,
+      "windSpeed": 7.8,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": -15,
+      "temperature": 19.1,
+      "anomaly": 0.5,
+      "precipitation": 59.9,
+      "precipitationAnomaly": -3.7,
+      "windSpeed": 6.8,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": 0,
+      "temperature": 12.8,
+      "anomaly": 0.8,
+      "precipitation": 35.5,
+      "precipitationAnomaly": 0.8,
+      "windSpeed": 2.7,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 35,
+      "longitude": 15,
+      "temperature": 20,
+      "anomaly": 0.8,
+      "precipitation": 62,
+      "precipitationAnomaly": -1.8,
+      "windSpeed": 7.1,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 35,
+      "longitude": 30,
+      "temperature": 19.9,
+      "anomaly": 0.9,
+      "precipitation": 72.3,
+      "precipitationAnomaly": 11.9,
+      "windSpeed": 5.8,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": 35,
+      "longitude": 45,
+      "temperature": 14,
+      "anomaly": -0.7,
+      "precipitation": 85.1,
+      "precipitationAnomaly": 28.7,
+      "windSpeed": 2.3,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": 60,
+      "temperature": 2.8,
+      "anomaly": 0.2,
+      "precipitation": 35.4,
+      "precipitationAnomaly": 18.2,
+      "windSpeed": 2.1,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": 75,
+      "temperature": -18.3,
+      "anomaly": 0.5,
+      "precipitation": 121.9,
+      "precipitationAnomaly": 55.2,
+      "windSpeed": 1.1,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 35,
+      "longitude": 90,
+      "temperature": -14.2,
+      "anomaly": 1.7,
+      "precipitation": 6.7,
+      "precipitationAnomaly": 0.6,
+      "windSpeed": 4.5,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": 35,
+      "longitude": 105,
+      "temperature": 0.3,
+      "anomaly": 0.9,
+      "precipitation": 20.3,
+      "precipitationAnomaly": 5.6,
+      "windSpeed": 2,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 35,
+      "longitude": 120,
+      "temperature": 13.7,
+      "anomaly": 0.8,
+      "precipitation": 66.9,
+      "precipitationAnomaly": 33.6,
+      "windSpeed": 7.5,
+      "windSpeedAnomaly": 0.5
+    },
+    {
+      "latitude": 35,
+      "longitude": 135,
+      "temperature": 13.5,
+      "anomaly": 1.8,
+      "precipitation": 122.5,
+      "precipitationAnomaly": 34.9,
+      "windSpeed": 2.6,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 35,
+      "longitude": 150,
+      "temperature": 19.9,
+      "anomaly": 1.6,
+      "precipitation": 220.9,
+      "precipitationAnomaly": 0.9,
+      "windSpeed": 9,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 35,
+      "longitude": 165,
+      "temperature": 19.8,
+      "anomaly": 1.3,
+      "precipitation": 167.4,
+      "precipitationAnomaly": -20.4,
+      "windSpeed": 8.9,
+      "windSpeedAnomaly": -0.4
+    },
+    {
+      "latitude": 50,
+      "longitude": -180,
+      "temperature": 6.3,
+      "anomaly": 0.7,
+      "precipitation": 146.9,
+      "precipitationAnomaly": 4.4,
+      "windSpeed": 11.4,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 50,
+      "longitude": -165,
+      "temperature": 6.8,
+      "anomaly": 0.5,
+      "precipitation": 138.5,
+      "precipitationAnomaly": 4.2,
+      "windSpeed": 11.2,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": -150,
+      "temperature": 8.5,
+      "anomaly": 0.9,
+      "precipitation": 147.6,
+      "precipitationAnomaly": 5.7,
+      "windSpeed": 11,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": -135,
+      "temperature": 10.7,
+      "anomaly": 1.2,
+      "precipitation": 163.2,
+      "precipitationAnomaly": -0.9,
+      "windSpeed": 9.9,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 50,
+      "longitude": -120,
+      "temperature": -2.4,
+      "anomaly": 1.7,
+      "precipitation": 58.2,
+      "precipitationAnomaly": -8.6,
+      "windSpeed": 1.8,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": -105,
+      "temperature": -0.3,
+      "anomaly": 1.8,
+      "precipitation": 17.7,
+      "precipitationAnomaly": -5.5,
+      "windSpeed": 3.8,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 50,
+      "longitude": -90,
+      "temperature": -0.5,
+      "anomaly": 1.4,
+      "precipitation": 54.8,
+      "precipitationAnomaly": -6.8,
+      "windSpeed": 3.4,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 50,
+      "longitude": -75,
+      "temperature": -0.3,
+      "anomaly": 1.2,
+      "precipitation": 90.1,
+      "precipitationAnomaly": -2.8,
+      "windSpeed": 3.7,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": -60,
+      "temperature": 4,
+      "anomaly": 1.1,
+      "precipitation": 112.5,
+      "precipitationAnomaly": -6.9,
+      "windSpeed": 8.8,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 50,
+      "longitude": -45,
+      "temperature": 7.6,
+      "anomaly": -0.5,
+      "precipitation": 167.1,
+      "precipitationAnomaly": -9.9,
+      "windSpeed": 11.1,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": -30,
+      "temperature": 11.2,
+      "anomaly": -0.2,
+      "precipitation": 170.9,
+      "precipitationAnomaly": 14.1,
+      "windSpeed": 11.2,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": 50,
+      "longitude": -15,
+      "temperature": 12.4,
+      "anomaly": 0.3,
+      "precipitation": 154.4,
+      "precipitationAnomaly": 23,
+      "windSpeed": 10.6,
+      "windSpeedAnomaly": 0.4
+    },
+    {
+      "latitude": 50,
+      "longitude": 0,
+      "temperature": 11.4,
+      "anomaly": 0.9,
+      "precipitation": 157,
+      "precipitationAnomaly": 25.2,
+      "windSpeed": 8.8,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": 50,
+      "longitude": 15,
+      "temperature": 4.9,
+      "anomaly": 0.9,
+      "precipitation": 50.3,
+      "precipitationAnomaly": 2.3,
+      "windSpeed": 3.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": 30,
+      "temperature": 2.7,
+      "anomaly": 0.2,
+      "precipitation": 51.6,
+      "precipitationAnomaly": 2.5,
+      "windSpeed": 3.6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 50,
+      "longitude": 45,
+      "temperature": 0.5,
+      "anomaly": -0.2,
+      "precipitation": 39.9,
+      "precipitationAnomaly": 2.5,
+      "windSpeed": 4.1,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 50,
+      "longitude": 60,
+      "temperature": -2.7,
+      "anomaly": 0.1,
+      "precipitation": 27.2,
+      "precipitationAnomaly": 4.4,
+      "windSpeed": 4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": 75,
+      "temperature": -5.5,
+      "anomaly": 0.2,
+      "precipitation": 30.4,
+      "precipitationAnomaly": 6.4,
+      "windSpeed": 4.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": 90,
+      "temperature": -12.9,
+      "anomaly": -0.2,
+      "precipitation": 9.4,
+      "precipitationAnomaly": 1.9,
+      "windSpeed": 1.7,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 50,
+      "longitude": 105,
+      "temperature": -11.4,
+      "anomaly": -0.2,
+      "precipitation": 12,
+      "precipitationAnomaly": 0.9,
+      "windSpeed": 1.9,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": 120,
+      "temperature": -12.3,
+      "anomaly": -0.3,
+      "precipitation": 14.3,
+      "precipitationAnomaly": 3.4,
+      "windSpeed": 3,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 50,
+      "longitude": 135,
+      "temperature": -16.2,
+      "anomaly": 0.8,
+      "precipitation": 43.6,
+      "precipitationAnomaly": 10,
+      "windSpeed": 1.9,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 50,
+      "longitude": 150,
+      "temperature": 3,
+      "anomaly": 1.1,
+      "precipitation": 132,
+      "precipitationAnomaly": 9.6,
+      "windSpeed": 10.5,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 50,
+      "longitude": 165,
+      "temperature": 5.3,
+      "anomaly": 0.9,
+      "precipitation": 152.6,
+      "precipitationAnomaly": 5.8,
+      "windSpeed": 11.1,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": -180,
+      "temperature": -6.4,
+      "anomaly": 1.2,
+      "precipitation": 69.3,
+      "precipitationAnomaly": 1.1,
+      "windSpeed": 8.3,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 65,
+      "longitude": -165,
+      "temperature": -10.2,
+      "anomaly": 1.3,
+      "precipitation": 57.7,
+      "precipitationAnomaly": -0.9,
+      "windSpeed": 3.3,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 65,
+      "longitude": -150,
+      "temperature": -12.8,
+      "anomaly": 1.9,
+      "precipitation": 22.2,
+      "precipitationAnomaly": -1.2,
+      "windSpeed": 3.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": -135,
+      "temperature": -14.3,
+      "anomaly": 2.3,
+      "precipitation": 29.9,
+      "precipitationAnomaly": 3,
+      "windSpeed": 2,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": -120,
+      "temperature": -10.9,
+      "anomaly": 2.6,
+      "precipitation": 33,
+      "precipitationAnomaly": 1.8,
+      "windSpeed": 4.1,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 65,
+      "longitude": -105,
+      "temperature": -14.3,
+      "anomaly": 3.3,
+      "precipitation": 26.3,
+      "precipitationAnomaly": 2.1,
+      "windSpeed": 5.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": -90,
+      "temperature": -15,
+      "anomaly": 3.4,
+      "precipitation": 34,
+      "precipitationAnomaly": 5.3,
+      "windSpeed": 6.3,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": -75,
+      "temperature": -8.3,
+      "anomaly": 3,
+      "precipitation": 31,
+      "precipitationAnomaly": -0.2,
+      "windSpeed": 5,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 65,
+      "longitude": -60,
+      "temperature": -1.8,
+      "anomaly": 2.7,
+      "precipitation": 56.2,
+      "precipitationAnomaly": 2.5,
+      "windSpeed": 8.1,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 65,
+      "longitude": -45,
+      "temperature": -22.7,
+      "anomaly": 0.7,
+      "precipitation": 40.7,
+      "precipitationAnomaly": -1.8,
+      "windSpeed": 7.7,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 65,
+      "longitude": -30,
+      "temperature": 4.9,
+      "anomaly": 0.7,
+      "precipitation": 150.1,
+      "precipitationAnomaly": -0.5,
+      "windSpeed": 10.3,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": -15,
+      "temperature": -1.5,
+      "anomaly": 1.1,
+      "precipitation": 153.4,
+      "precipitationAnomaly": 5.9,
+      "windSpeed": 3.4,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": 0,
+      "temperature": 6.4,
+      "anomaly": 0.7,
+      "precipitation": 88.5,
+      "precipitationAnomaly": -6.8,
+      "windSpeed": 9.4,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 65,
+      "longitude": 15,
+      "temperature": -7.4,
+      "anomaly": 1,
+      "precipitation": 67.3,
+      "precipitationAnomaly": -4.6,
+      "windSpeed": 2.6,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": 30,
+      "temperature": -3.2,
+      "anomaly": 1.5,
+      "precipitation": 52.9,
+      "precipitationAnomaly": -1.2,
+      "windSpeed": 3.3,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 65,
+      "longitude": 45,
+      "temperature": -4.4,
+      "anomaly": 1.8,
+      "precipitation": 51,
+      "precipitationAnomaly": 0.2,
+      "windSpeed": 3.3,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 65,
+      "longitude": 60,
+      "temperature": -12.6,
+      "anomaly": 1.5,
+      "precipitation": 78.3,
+      "precipitationAnomaly": 9.2,
+      "windSpeed": 2.2,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 65,
+      "longitude": 75,
+      "temperature": -12.7,
+      "anomaly": 1.9,
+      "precipitation": 41,
+      "precipitationAnomaly": 3.3,
+      "windSpeed": 5.4,
+      "windSpeedAnomaly": -0.2
+    },
+    {
+      "latitude": 65,
+      "longitude": 90,
+      "temperature": -19,
+      "anomaly": 1,
+      "precipitation": 48.2,
+      "precipitationAnomaly": -0.8,
+      "windSpeed": 3.5,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": 105,
+      "temperature": -22.7,
+      "anomaly": 0.9,
+      "precipitation": 19.5,
+      "precipitationAnomaly": -0.7,
+      "windSpeed": 2.1,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": 120,
+      "temperature": -22.8,
+      "anomaly": 1.3,
+      "precipitation": 16.4,
+      "precipitationAnomaly": -0.2,
+      "windSpeed": 2.3,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 65,
+      "longitude": 135,
+      "temperature": -26.1,
+      "anomaly": 0.9,
+      "precipitation": 11.7,
+      "precipitationAnomaly": 0.6,
+      "windSpeed": 2.2,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 65,
+      "longitude": 150,
+      "temperature": -21.6,
+      "anomaly": 1.8,
+      "precipitation": 29.8,
+      "precipitationAnomaly": 2.4,
+      "windSpeed": 2.3,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 65,
+      "longitude": 165,
+      "temperature": -21.6,
+      "anomaly": 0.9,
+      "precipitation": 31,
+      "precipitationAnomaly": -3.3,
+      "windSpeed": 3.3,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 80,
+      "longitude": -180,
+      "temperature": -15.2,
+      "anomaly": 2.8,
+      "precipitation": 16.5,
+      "precipitationAnomaly": 1,
+      "windSpeed": 6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 80,
+      "longitude": -165,
+      "temperature": -15.9,
+      "anomaly": 2.8,
+      "precipitation": 16.6,
+      "precipitationAnomaly": 1.2,
+      "windSpeed": 6,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 80,
+      "longitude": -150,
+      "temperature": -16.3,
+      "anomaly": 3,
+      "precipitation": 16,
+      "precipitationAnomaly": 1.7,
+      "windSpeed": 6,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 80,
+      "longitude": -135,
+      "temperature": -16.6,
+      "anomaly": 2.9,
+      "precipitation": 16.3,
+      "precipitationAnomaly": 2.5,
+      "windSpeed": 6,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 80,
+      "longitude": -120,
+      "temperature": -17.1,
+      "anomaly": 2.7,
+      "precipitation": 16.6,
+      "precipitationAnomaly": 2.7,
+      "windSpeed": 5.9,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 80,
+      "longitude": -105,
+      "temperature": -17.5,
+      "anomaly": 2.5,
+      "precipitation": 17.8,
+      "precipitationAnomaly": 2.8,
+      "windSpeed": 6.2,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 80,
+      "longitude": -90,
+      "temperature": -18.7,
+      "anomaly": 2,
+      "precipitation": 8.4,
+      "precipitationAnomaly": 1.3,
+      "windSpeed": 2.5,
+      "windSpeedAnomaly": -0.1
+    },
+    {
+      "latitude": 80,
+      "longitude": -75,
+      "temperature": -23.3,
+      "anomaly": 2.1,
+      "precipitation": 12.9,
+      "precipitationAnomaly": 1.8,
+      "windSpeed": 1.9,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 80,
+      "longitude": -60,
+      "temperature": -26.5,
+      "anomaly": 2,
+      "precipitation": 10.3,
+      "precipitationAnomaly": 1.5,
+      "windSpeed": 2.6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 80,
+      "longitude": -45,
+      "temperature": -28.9,
+      "anomaly": 1.6,
+      "precipitation": 9.3,
+      "precipitationAnomaly": 0.7,
+      "windSpeed": 7.4,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 80,
+      "longitude": -30,
+      "temperature": -24.1,
+      "anomaly": 1.4,
+      "precipitation": 9.6,
+      "precipitationAnomaly": 0.2,
+      "windSpeed": 8.3,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 80,
+      "longitude": -15,
+      "temperature": -15.7,
+      "anomaly": 2.3,
+      "precipitation": 33.5,
+      "precipitationAnomaly": 0.8,
+      "windSpeed": 4.1,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 80,
+      "longitude": 0,
+      "temperature": -8.7,
+      "anomaly": 2.4,
+      "precipitation": 43.8,
+      "precipitationAnomaly": 3.7,
+      "windSpeed": 7.6,
+      "windSpeedAnomaly": -0.3
+    },
+    {
+      "latitude": 80,
+      "longitude": 15,
+      "temperature": -3.4,
+      "anomaly": 3,
+      "precipitation": 66.6,
+      "precipitationAnomaly": 8.2,
+      "windSpeed": 6.9,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 80,
+      "longitude": 30,
+      "temperature": -4.6,
+      "anomaly": 5.3,
+      "precipitation": 43,
+      "precipitationAnomaly": 6.1,
+      "windSpeed": 7.3,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 80,
+      "longitude": 45,
+      "temperature": -3.5,
+      "anomaly": 5,
+      "precipitation": 50.5,
+      "precipitationAnomaly": 10,
+      "windSpeed": 8.2,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": 80,
+      "longitude": 60,
+      "temperature": -6.8,
+      "anomaly": 5.8,
+      "precipitation": 46.8,
+      "precipitationAnomaly": 11.6,
+      "windSpeed": 6.5,
+      "windSpeedAnomaly": 0.3
+    },
+    {
+      "latitude": 80,
+      "longitude": 75,
+      "temperature": -4.8,
+      "anomaly": 6.2,
+      "precipitation": 54.2,
+      "precipitationAnomaly": 17.3,
+      "windSpeed": 8,
+      "windSpeedAnomaly": 0.5
+    },
+    {
+      "latitude": 80,
+      "longitude": 90,
+      "temperature": -8.7,
+      "anomaly": 5.7,
+      "precipitation": 35.2,
+      "precipitationAnomaly": 8.4,
+      "windSpeed": 6.8,
+      "windSpeedAnomaly": 0.5
+    },
+    {
+      "latitude": 80,
+      "longitude": 105,
+      "temperature": -11.3,
+      "anomaly": 5.2,
+      "precipitation": 24.4,
+      "precipitationAnomaly": 7.1,
+      "windSpeed": 6.4,
+      "windSpeedAnomaly": 0.5
+    },
+    {
+      "latitude": 80,
+      "longitude": 120,
+      "temperature": -12.6,
+      "anomaly": 3.7,
+      "precipitation": 21,
+      "precipitationAnomaly": 2.9,
+      "windSpeed": 6.4,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 80,
+      "longitude": 135,
+      "temperature": -12.9,
+      "anomaly": 3.4,
+      "precipitation": 19.9,
+      "precipitationAnomaly": 1.3,
+      "windSpeed": 6.3,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 80,
+      "longitude": 150,
+      "temperature": -13.8,
+      "anomaly": 3.1,
+      "precipitation": 18.7,
+      "precipitationAnomaly": 0.8,
+      "windSpeed": 6.1,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 80,
+      "longitude": 165,
+      "temperature": -14.5,
+      "anomaly": 2.8,
+      "precipitation": 17.8,
+      "precipitationAnomaly": 1.3,
+      "windSpeed": 6.1,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": -180,
+      "temperature": -16.2,
+      "anomaly": 3,
+      "precipitation": 17.3,
+      "precipitationAnomaly": 2.2,
+      "windSpeed": 6,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": -165,
+      "temperature": -16.5,
+      "anomaly": 2.9,
+      "precipitation": 16.7,
+      "precipitationAnomaly": 2.2,
+      "windSpeed": 5.9,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": -150,
+      "temperature": -17,
+      "anomaly": 2.8,
+      "precipitation": 16.2,
+      "precipitationAnomaly": 1.9,
+      "windSpeed": 5.8,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": -135,
+      "temperature": -17.1,
+      "anomaly": 2.8,
+      "precipitation": 16.2,
+      "precipitationAnomaly": 2.2,
+      "windSpeed": 5.9,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": -120,
+      "temperature": -17.4,
+      "anomaly": 2.8,
+      "precipitation": 17,
+      "precipitationAnomaly": 3,
+      "windSpeed": 5.8,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": -105,
+      "temperature": -17.6,
+      "anomaly": 2.8,
+      "precipitation": 16.4,
+      "precipitationAnomaly": 2.9,
+      "windSpeed": 5.8,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": -90,
+      "temperature": -17.8,
+      "anomaly": 2.8,
+      "precipitation": 15.7,
+      "precipitationAnomaly": 2.5,
+      "windSpeed": 5.7,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": -75,
+      "temperature": -18.1,
+      "anomaly": 2.8,
+      "precipitation": 15.1,
+      "precipitationAnomaly": 2.1,
+      "windSpeed": 5.4,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": -60,
+      "temperature": -18.4,
+      "anomaly": 2.9,
+      "precipitation": 14,
+      "precipitationAnomaly": 1.4,
+      "windSpeed": 5.3,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": -45,
+      "temperature": -17.7,
+      "anomaly": 3,
+      "precipitation": 15.5,
+      "precipitationAnomaly": 1.1,
+      "windSpeed": 5.7,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": -30,
+      "temperature": -17.3,
+      "anomaly": 3.1,
+      "precipitation": 21.6,
+      "precipitationAnomaly": 1.8,
+      "windSpeed": 6.2,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": -15,
+      "temperature": -15.7,
+      "anomaly": 3.3,
+      "precipitation": 25.3,
+      "precipitationAnomaly": 2.3,
+      "windSpeed": 6.6,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 85,
+      "longitude": 0,
+      "temperature": -14.3,
+      "anomaly": 3.6,
+      "precipitation": 26.3,
+      "precipitationAnomaly": 4,
+      "windSpeed": 6.5,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": 15,
+      "temperature": -13.1,
+      "anomaly": 3.6,
+      "precipitation": 27.9,
+      "precipitationAnomaly": 4.4,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": 30,
+      "temperature": -12.5,
+      "anomaly": 3.8,
+      "precipitation": 27.5,
+      "precipitationAnomaly": 3.9,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": 45,
+      "temperature": -12.4,
+      "anomaly": 4,
+      "precipitation": 27.2,
+      "precipitationAnomaly": 4.4,
+      "windSpeed": 6.6,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": 60,
+      "temperature": -11.9,
+      "anomaly": 4.4,
+      "precipitation": 28.3,
+      "precipitationAnomaly": 5.8,
+      "windSpeed": 6.7,
+      "windSpeedAnomaly": 0
+    },
+    {
+      "latitude": 85,
+      "longitude": 75,
+      "temperature": -12,
+      "anomaly": 4.7,
+      "precipitation": 27.2,
+      "precipitationAnomaly": 6.4,
+      "windSpeed": 6.6,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": 90,
+      "temperature": -12.7,
+      "anomaly": 4.5,
+      "precipitation": 25,
+      "precipitationAnomaly": 6,
+      "windSpeed": 6.5,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 85,
+      "longitude": 105,
+      "temperature": -13.4,
+      "anomaly": 4.3,
+      "precipitation": 23.2,
+      "precipitationAnomaly": 5.3,
+      "windSpeed": 6.4,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 85,
+      "longitude": 120,
+      "temperature": -14.1,
+      "anomaly": 3.9,
+      "precipitation": 22,
+      "precipitationAnomaly": 5.3,
+      "windSpeed": 6.3,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 85,
+      "longitude": 135,
+      "temperature": -14.8,
+      "anomaly": 3.6,
+      "precipitation": 20.5,
+      "precipitationAnomaly": 4.2,
+      "windSpeed": 6.2,
+      "windSpeedAnomaly": 0.2
+    },
+    {
+      "latitude": 85,
+      "longitude": 150,
+      "temperature": -15.3,
+      "anomaly": 3.2,
+      "precipitation": 19.1,
+      "precipitationAnomaly": 3.4,
+      "windSpeed": 6.1,
+      "windSpeedAnomaly": 0.1
+    },
+    {
+      "latitude": 85,
+      "longitude": 165,
+      "temperature": -15.9,
+      "anomaly": 2.9,
+      "precipitation": 17.6,
+      "precipitationAnomaly": 2.4,
+      "windSpeed": 6,
+      "windSpeedAnomaly": 0.1
+    }
+  ]
+}

@@ -40,6 +40,22 @@ function setClockFromWeather(weather) {
     updateClock();
 }
 
+
+function cacheFreshness(cache) {
+    const status = String(cache?.status ?? "");
+    if (!status.startsWith("cache")) {
+        return "live";
+    }
+
+    const ageMinutes = Number.isFinite(cache?.ageMs)
+        ? Math.max(0, Math.round(cache.ageMs / 60000))
+        : null;
+
+    return ageMinutes === null
+        ? "cached fallback"
+        : `cached fallback · ${ageMinutes} min old`;
+}
+
 function countryNameFromCode(countryCode) {
     if (!countryCode) {
         return "Selected location";
@@ -62,7 +78,16 @@ function formatMonth(month) {
     }).format(new Date(Date.UTC(year, monthNumber - 1, 1)));
 }
 
+function formatMaybeNumber(value, digits = 1, suffix = "") {
+    return Number.isFinite(Number(value))
+        ? `${Number(value).toFixed(digits)}${suffix}`
+        : "Unavailable";
+}
+
 function renderWeather(weather) {
+    window.__climateCurrentWeather = weather;
+    window.__climateForecastPoint = null;
+
     const countryName = countryNameFromCode(
         weather.location.country
     );
@@ -79,6 +104,14 @@ function renderWeather(weather) {
         }
     );
 
+    const observationAgeMinutes = Math.max(
+        0,
+        Math.round((Date.now() - new Date(weather.observedAt).getTime()) / 60000)
+    );
+    const freshnessText = observationAgeMinutes <= 1
+        ? "fresh observation"
+        : `${observationAgeMinutes} min old`;
+
     weatherResult.innerHTML = `
         <div class="weather-country">
             ${countryName}
@@ -89,7 +122,7 @@ function renderWeather(weather) {
         </h2>
 
         <div class="weather-temperature">
-            ${weather.weather.temperature.toFixed(1)}°
+            ${formatMaybeNumber(weather.weather.temperature, 1, "°")}
         </div>
 
         <div class="weather-condition">
@@ -99,6 +132,9 @@ function renderWeather(weather) {
         <div class="weather-updated">
             Updated ${observedTime}
         </div>
+        <div class="weather-source-meta">
+            OpenWeather observation · ${freshnessText} · ${cacheFreshness(weather.cache)}
+        </div>
 
         <div class="weather-details">
             <div class="weather-detail">
@@ -106,7 +142,7 @@ function renderWeather(weather) {
                     <span class="weather-detail-icon">🌡️</span>
                     Feels like
                 </span>
-                <strong>${weather.weather.feelsLike.toFixed(1)} °C</strong>
+                <strong>${formatMaybeNumber(weather.weather.feelsLike, 1, " °C")}</strong>
             </div>
 
             <div class="weather-detail">
@@ -114,7 +150,7 @@ function renderWeather(weather) {
                     <span class="weather-detail-icon">💧</span>
                     Humidity
                 </span>
-                <strong>${weather.weather.humidity}%</strong>
+                <strong>${Number.isFinite(Number(weather.weather.humidity)) ? `${weather.weather.humidity}%` : "Unavailable"}</strong>
             </div>
 
             <div class="weather-detail">
@@ -122,7 +158,7 @@ function renderWeather(weather) {
                     <span class="weather-detail-icon">⏱️</span>
                     Pressure
                 </span>
-                <strong>${weather.weather.pressure} hPa</strong>
+                <strong>${Number.isFinite(Number(weather.weather.pressure)) ? `${weather.weather.pressure} hPa` : "Unavailable"}</strong>
             </div>
 
             <div class="weather-detail">
@@ -130,7 +166,7 @@ function renderWeather(weather) {
                     <span class="weather-detail-icon">💨</span>
                     Wind
                 </span>
-                <strong>${weather.weather.windSpeed} m/s</strong>
+                <strong>${formatMaybeNumber(weather.weather.windSpeed, 1, " m/s")}</strong>
             </div>
 
             <div class="weather-detail">
@@ -138,7 +174,7 @@ function renderWeather(weather) {
                     <span class="weather-detail-icon">🌧️</span>
                     Precipitation (1h)
                 </span>
-                <strong>${Number(weather.weather.precipitation ?? 0).toFixed(1)} mm</strong>
+                <strong>${formatMaybeNumber(weather.weather.precipitation ?? 0, 1, " mm")}</strong>
             </div>
 
             <div class="weather-detail">
@@ -146,7 +182,7 @@ function renderWeather(weather) {
                     <span class="weather-detail-icon">☁️</span>
                     Cloudiness
                 </span>
-                <strong>${weather.weather.cloudiness}%</strong>
+                <strong>${Number.isFinite(Number(weather.weather.cloudiness)) ? `${weather.weather.cloudiness}%` : "Unavailable"}</strong>
             </div>
         </div>
     `;
@@ -155,12 +191,19 @@ function renderWeather(weather) {
 }
 
 function renderForecast(weatherMetadata, forecast) {
+    window.__climateCurrentWeather = weatherMetadata;
+    window.__climateForecastPoint = forecast;
+
     const countryName = countryNameFromCode(
         weatherMetadata.location.country
     );
 
     const anomalyText = Number.isFinite(forecast.anomaly)
         ? `${forecast.anomaly >= 0 ? "+" : ""}${forecast.anomaly.toFixed(1)} °C`
+        : "Unavailable";
+
+    const precipitationAnomalyText = Number.isFinite(forecast.precipitationAnomaly)
+        ? `${forecast.precipitationAnomaly >= 0 ? "+" : ""}${forecast.precipitationAnomaly.toFixed(1)} mm`
         : "Unavailable";
 
     weatherResult.innerHTML = `
@@ -183,6 +226,9 @@ function renderForecast(weatherMetadata, forecast) {
         <div class="weather-condition">
             Forecast monthly mean
         </div>
+        <div class="weather-source-meta">
+            ECMWF SEAS5 ensemble mean · monthly seasonal outlook · ${cacheFreshness(forecast.cache)}
+        </div>
 
         <div class="weather-details forecast-details">
             <div class="weather-detail">
@@ -199,6 +245,14 @@ function renderForecast(weatherMetadata, forecast) {
                     Precipitation mean
                 </span>
                 <strong>${Number.isFinite(forecast.precipitation) ? `${forecast.precipitation.toFixed(1)} mm` : "Unavailable"}</strong>
+            </div>
+
+            <div class="weather-detail">
+                <span class="weather-detail-label">
+                    <span class="weather-detail-icon">↕️</span>
+                    Precipitation anomaly
+                </span>
+                <strong>${precipitationAnomalyText}</strong>
             </div>
 
             <div class="weather-detail">

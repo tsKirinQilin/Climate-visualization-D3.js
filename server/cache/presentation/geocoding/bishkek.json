@@ -1,0 +1,29 @@
+{
+  "savedAt": "2026-10-02T08:45:47.415Z",
+  "data": [
+    {
+      "name": "Bishkek",
+      "country": "KG",
+      "state": "Bishkek",
+      "latitude": 42.87,
+      "longitude": 74.59,
+      "timezone": "Asia/Bishkek"
+    },
+    {
+      "name": "Bishkek Fez",
+      "country": "KG",
+      "state": "Chuy Region",
+      "latitude": 43.0402,
+      "longitude": 74.51474,
+      "timezone": "Asia/Bishkek"
+    },
+    {
+      "name": "Bishkek Northwest",
+      "country": "KG",
+      "state": "Chuy Region",
+      "latitude": 42.9133,
+      "longitude": 74.50963,
+      "timezone": "Asia/Bishkek"
+    }
+  ]
+}

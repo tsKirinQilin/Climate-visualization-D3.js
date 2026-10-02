@@ -2,6 +2,7 @@ import { getShortRangeForecast } from "../providers/openMeteoForecastProvider.js
 import { getHistoricalDaily } from "../providers/openMeteoHistoricalProvider.js";
 import { getSeasonalProfileConditions } from "../providers/openMeteoTemperatureProvider.js";
 import { getSeasonalForecastForLocation } from "./seasonalForecastService.js";
+import { getWithPersistentFallback } from "../utils/persistentCache.js";
 
 const shortRangeCache = new Map();
 const seasonalProfileCache = new Map();
@@ -123,25 +124,40 @@ export async function getLocationAnalytics(latitude, longitude) {
         return cached;
     }
 
-    const raw = await getShortRangeForecast(latitude, longitude);
-    const value = {
-        latitude: raw.latitude,
-        longitude: raw.longitude,
-        timezone: raw.timezone,
-        timezoneAbbreviation: raw.timezone_abbreviation,
-        utcOffsetSeconds: raw.utc_offset_seconds,
-        hourly: zipHourly(raw),
-        daily: zipDaily(raw),
-        units: {
-            temperature: "°C",
-            precipitationProbability: "%",
-            precipitation: "mm",
-            windSpeed: "m/s"
-        },
-        source: "Open-Meteo Weather Forecast API"
-    };
+    const result = await getWithPersistentFallback({
+        namespace: "analytics-short-range",
+        key,
+        ttlMs: SHORT_RANGE_TTL,
+        maxWaitMs: 5000,
+        loadFresh: async () => {
+            const raw = await getShortRangeForecast(latitude, longitude);
+            return {
+                latitude: raw.latitude,
+                longitude: raw.longitude,
+                timezone: raw.timezone,
+                timezoneAbbreviation: raw.timezone_abbreviation,
+                utcOffsetSeconds: raw.utc_offset_seconds,
+                hourly: zipHourly(raw),
+                daily: zipDaily(raw),
+                units: {
+                    temperature: "°C",
+                    precipitationProbability: "%",
+                    precipitation: "mm",
+                    windSpeed: "m/s"
+                },
+                source: "Open-Meteo Weather Forecast API"
+            };
+        }
+    });
 
-    return writeCache(shortRangeCache, key, value);
+    return writeCache(shortRangeCache, key, {
+        ...result.data,
+        cache: {
+            status: result.status,
+            savedAt: result.savedAt,
+            ageMs: result.ageMs
+        }
+    });
 }
 
 export async function getSeasonalProfile(latitude, longitude) {
@@ -152,35 +168,49 @@ export async function getSeasonalProfile(latitude, longitude) {
         return cached;
     }
 
-    const raw = await getSeasonalProfileConditions(latitude, longitude);
+    const result = await getWithPersistentFallback({
+        namespace: "analytics-seasonal-profile",
+        key,
+        ttlMs: SEASONAL_TTL,
+        maxWaitMs: 5000,
+        loadFresh: async () => {
+            const raw = await getSeasonalProfileConditions(latitude, longitude);
 
-    if (!raw) {
-        throw new Error("No seasonal profile returned");
-    }
+            if (!raw) {
+                throw new Error("No seasonal profile returned");
+            }
 
-    const monthly = raw.monthly ?? {};
-    const times = monthly.time ?? [];
+            const monthly = raw.monthly ?? {};
+            const times = monthly.time ?? [];
+            const months = times.map((time, index) => ({
+                month: String(time).slice(0, 7),
+                temperature: monthly.temperature_2m_mean?.[index] ?? null,
+                temperatureAnomaly: monthly.temperature_2m_anomaly?.[index] ?? null,
+                precipitation: monthly.precipitation_mean?.[index] ?? null,
+                precipitationAnomaly: monthly.precipitation_anomaly?.[index] ?? null,
+                windSpeed: monthly.wind_speed_10m_mean?.[index] ?? null,
+                windSpeedAnomaly: monthly.wind_speed_10m_anomaly?.[index] ?? null
+            }));
 
-    const months = times.map((time, index) => ({
-        month: String(time).slice(0, 7),
-        temperature: monthly.temperature_2m_mean?.[index] ?? null,
-        temperatureAnomaly: monthly.temperature_2m_anomaly?.[index] ?? null,
-        precipitation: monthly.precipitation_mean?.[index] ?? null,
-        precipitationAnomaly: monthly.precipitation_anomaly?.[index] ?? null,
-        windSpeed: monthly.wind_speed_10m_mean?.[index] ?? null,
-        windSpeedAnomaly: monthly.wind_speed_10m_anomaly?.[index] ?? null
-    }));
+            return {
+                latitude: raw.latitude,
+                longitude: raw.longitude,
+                months,
+                model: "ECMWF SEAS5 ensemble mean",
+                source: "Open-Meteo / ECMWF",
+                note: "Seasonal values describe broad monthly conditions. They are not exact day-by-day local predictions."
+            };
+        }
+    });
 
-    const value = {
-        latitude: raw.latitude,
-        longitude: raw.longitude,
-        months,
-        model: "ECMWF SEAS5 ensemble mean",
-        source: "Open-Meteo / ECMWF",
-        note: "Seasonal values describe broad monthly conditions. They are not exact day-by-day local predictions."
-    };
-
-    return writeCache(seasonalProfileCache, key, value);
+    return writeCache(seasonalProfileCache, key, {
+        ...result.data,
+        cache: {
+            status: result.status,
+            savedAt: result.savedAt,
+            ageMs: result.ageMs
+        }
+    });
 }
 
 export async function getHistoricalMonthSummary(latitude, longitude, month) {

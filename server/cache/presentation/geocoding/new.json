@@ -1,0 +1,45 @@
+{
+  "savedAt": "2026-10-02T08:47:25.646Z",
+  "data": [
+    {
+      "name": "Nnewi",
+      "country": "NG",
+      "state": "Anambra",
+      "latitude": 6.01962,
+      "longitude": 6.91729,
+      "timezone": "Africa/Lagos"
+    },
+    {
+      "name": "New",
+      "country": "US",
+      "state": "Kentucky",
+      "latitude": 38.42785,
+      "longitude": -84.8105,
+      "timezone": "America/New_York"
+    },
+    {
+      "name": "Newark",
+      "country": "US",
+      "state": "New Jersey",
+      "latitude": 40.73566,
+      "longitude": -74.17237,
+      "timezone": "America/New_York"
+    },
+    {
+      "name": "Lakefront Airport",
+      "country": "US",
+      "state": "Louisiana",
+      "latitude": 30.03593,
+      "longitude": -90.02561,
+      "timezone": "America/Chicago"
+    },
+    {
+      "name": "Sacramento",
+      "country": "US",
+      "state": "California",
+      "latitude": 38.58157,
+      "longitude": -121.4944,
+      "timezone": "America/Los_Angeles"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "savedAt": "2026-10-02T08:47:25.361Z",
+  "data": [
+    {
+      "name": "Ne",
+      "country": "IT",
+      "state": "Liguria",
+      "latitude": 44.35559,
+      "longitude": 9.38787,
+      "timezone": "Europe/Rome"
+    },
+    {
+      "name": "Né",
+      "country": "CM",
+      "state": "Far North",
+      "latitude": 10.15,
+      "longitude": 15.03333,
+      "timezone": "Africa/Douala"
+    },
+    {
+      "name": "Ne",
+      "country": "JP",
+      "state": "Chiba",
+      "latitude": 35.21842,
+      "longitude": 140.37692,
+      "timezone": "Asia/Tokyo"
+    }
+  ]
+}

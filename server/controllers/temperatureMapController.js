@@ -1,6 +1,6 @@
 import {
-    getForecastMapPoints,
-    getRealtimeMapPoints,
+    getForecastMapSnapshot,
+    getRealtimeMapSnapshot,
     getRealtimePrecipitationPoints,
     isForecastMonthSupported
 } from "../services/temperatureMapService.js";
@@ -20,14 +20,15 @@ export async function getTemperatureMap(req, res) {
                 });
             }
 
-            const points = await getForecastMapPoints(month);
+            const snapshot = await getForecastMapSnapshot(month);
 
             return res.json({
                 mode: "forecast",
                 month,
                 model: "ECMWF SEAS5 ensemble mean",
                 source: "Open-Meteo / ECMWF",
-                points
+                points: snapshot.points,
+                cache: snapshot.cache
             });
         }
 
@@ -62,18 +63,20 @@ export async function getTemperatureMap(req, res) {
                 generatedAt: new Date().toISOString(),
                 source: "Open-Meteo",
                 gridStep: detail.step,
-                points: detail.points
+                points: detail.points,
+                cache: detail.cache
             });
         }
 
-        const points = await getRealtimeMapPoints();
+        const snapshot = await getRealtimeMapSnapshot();
 
         return res.json({
             mode: "realtime",
             generatedAt: new Date().toISOString(),
             source: "Open-Meteo",
             gridStep: 15,
-            points
+            points: snapshot.points,
+            cache: snapshot.cache
         });
     } catch (error) {
         console.error(error);

@@ -1,0 +1,221 @@
+{
+  "savedAt": "2026-10-02T08:46:27.336Z",
+  "data": {
+    "latitude": 39.89455,
+    "longitude": 116.35983,
+    "timezone": "Asia/Shanghai",
+    "timezoneAbbreviation": "GMT+8",
+    "utcOffsetSeconds": 28800,
+    "hourly": [
+      {
+        "time": "2026-10-02T16:00",
+        "temperature": 22.2,
+        "precipitationProbability": 0,
+        "windSpeed": 2.84
+      },
+      {
+        "time": "2026-10-02T17:00",
+        "temperature": 21.5,
+        "precipitationProbability": 0,
+        "windSpeed": 2.98
+      },
+      {
+        "time": "2026-10-02T18:00",
+        "temperature": 19.8,
+        "precipitationProbability": 0,
+        "windSpeed": 2.8
+      },
+      {
+        "time": "2026-10-02T19:00",
+        "temperature": 18.5,
+        "precipitationProbability": 0,
+        "windSpeed": 2.65
+      },
+      {
+        "time": "2026-10-02T20:00",
+        "temperature": 17.4,
+        "precipitationProbability": 0,
+        "windSpeed": 2.55
+      },
+      {
+        "time": "2026-10-02T21:00",
+        "temperature": 16.6,
+        "precipitationProbability": 0,
+        "windSpeed": 2.51
+      },
+      {
+        "time": "2026-10-02T22:00",
+        "temperature": 15.7,
+        "precipitationProbability": 0,
+        "windSpeed": 2.47
+      },
+      {
+        "time": "2026-10-02T23:00",
+        "temperature": 14.8,
+        "precipitationProbability": 0,
+        "windSpeed": 1.97
+      },
+      {
+        "time": "2026-10-03T00:00",
+        "temperature": 14.5,
+        "precipitationProbability": 0,
+        "windSpeed": 1.45
+      },
+      {
+        "time": "2026-10-03T01:00",
+        "temperature": 13.8,
+        "precipitationProbability": 0,
+        "windSpeed": 1.67
+      },
+      {
+        "time": "2026-10-03T02:00",
+        "temperature": 13.6,
+        "precipitationProbability": 0,
+        "windSpeed": 1.08
+      },
+      {
+        "time": "2026-10-03T03:00",
+        "temperature": 13.3,
+        "precipitationProbability": 0,
+        "windSpeed": 0.58
+      },
+      {
+        "time": "2026-10-03T04:00",
+        "temperature": 12.6,
+        "precipitationProbability": 0,
+        "windSpeed": 1.36
+      },
+      {
+        "time": "2026-10-03T05:00",
+        "temperature": 12,
+        "precipitationProbability": 0,
+        "windSpeed": 1.46
+      },
+      {
+        "time": "2026-10-03T06:00",
+        "temperature": 11.3,
+        "precipitationProbability": 1,
+        "windSpeed": 1.39
+      },
+      {
+        "time": "2026-10-03T07:00",
+        "temperature": 11.5,
+        "precipitationProbability": 3,
+        "windSpeed": 1.41
+      },
+      {
+        "time": "2026-10-03T08:00",
+        "temperature": 12.7,
+        "precipitationProbability": 6,
+        "windSpeed": 0.65
+      },
+      {
+        "time": "2026-10-03T09:00",
+        "temperature": 14.5,
+        "precipitationProbability": 13,
+        "windSpeed": 0.18
+      },
+      {
+        "time": "2026-10-03T10:00",
+        "temperature": 15.8,
+        "precipitationProbability": 21,
+        "windSpeed": 0.57
+      },
+      {
+        "time": "2026-10-03T11:00",
+        "temperature": 17.4,
+        "precipitationProbability": 24,
+        "windSpeed": 1.05
+      },
+      {
+        "time": "2026-10-03T12:00",
+        "temperature": 19.6,
+        "precipitationProbability": 18,
+        "windSpeed": 1.64
+      },
+      {
+        "time": "2026-10-03T13:00",
+        "temperature": 21.6,
+        "precipitationProbability": 8,
+        "windSpeed": 2.17
+      },
+      {
+        "time": "2026-10-03T14:00",
+        "temperature": 22.8,
+        "precipitationProbability": 0,
+        "windSpeed": 3.06
+      },
+      {
+        "time": "2026-10-03T15:00",
+        "temperature": 23.1,
+        "precipitationProbability": 0,
+        "windSpeed": 3.09
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-10-02",
+        "temperatureMax": 22.2,
+        "temperatureMin": 11.3,
+        "precipitationProbability": 0,
+        "precipitation": 0,
+        "windSpeedMax": 2.98
+      },
+      {
+        "date": "2026-10-03",
+        "temperatureMax": 23.1,
+        "temperatureMin": 11.3,
+        "precipitationProbability": 24,
+        "precipitation": 0.1,
+        "windSpeedMax": 6.33
+      },
+      {
+        "date": "2026-10-04",
+        "temperatureMax": 20.6,
+        "temperatureMin": 14.5,
+        "precipitationProbability": 2,
+        "precipitation": 0,
+        "windSpeedMax": 6.58
+      },
+      {
+        "date": "2026-10-05",
+        "temperatureMax": 24.5,
+        "temperatureMin": 11,
+        "precipitationProbability": 0,
+        "precipitation": 0,
+        "windSpeedMax": 3.85
+      },
+      {
+        "date": "2026-10-06",
+        "temperatureMax": 24.7,
+        "temperatureMin": 13.3,
+        "precipitationProbability": 0,
+        "precipitation": 0,
+        "windSpeedMax": 2.53
+      },
+      {
+        "date": "2026-10-07",
+        "temperatureMax": 26.2,
+        "temperatureMin": 14.3,
+        "precipitationProbability": 0,
+        "precipitation": 0,
+        "windSpeedMax": 3.31
+      },
+      {
+        "date": "2026-10-08",
+        "temperatureMax": 24.3,
+        "temperatureMin": 14.4,
+        "precipitationProbability": 0,
+        "precipitation": 0,
+        "windSpeedMax": 1.9
+      }
+    ],
+    "units": {
+      "temperature": "°C",
+      "precipitationProbability": "%",
+      "precipitation": "mm",
+      "windSpeed": "m/s"
+    },
+    "source": "Open-Meteo Weather Forecast API"
+  }
+}
