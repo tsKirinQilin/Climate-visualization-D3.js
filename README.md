@@ -2,8 +2,6 @@
 
 A D3.js weather and climate intelligence platform built as a single Node.js / Express application.
 
-## Defense build features
-
 ### Global interactive map
 
 - Realtime global map with temperature, precipitation and wind-speed metrics. Realtime precipitation uses OpenWeather Weather Maps 1.0 raster tiles so local rain systems are not missed by the coarser point grid used for temperature and wind.
@@ -196,14 +194,6 @@ Realtime Rain uses the OpenWeather `precipitation_new` Weather Maps 1.0 layer th
 
 - **Wind** uses the Open-Meteo realtime vector grid for both the color field and a dense Canvas particle animation. D3 handles the geographic projection, zoom transform, interpolation inputs and cursor coordinate inversion; Canvas is used only for the high-frequency particle drawing.
 - **Realtime precipitation** is rendered from OpenWeather `precipitation_new` tiles. The hover tooltip samples the already-loaded tile pixels locally and reports an approximate intensity range, so moving the cursor does not generate extra weather API requests.
-
-### Defense map polish: wrapped Mercator wind map
-
-- Realtime wind now fills the usable Mercator latitude range instead of stopping around ±75°.
-- Wind direction in the cursor tooltip is shown with a continuously rotated arrow that follows the particle-flow direction.
-- The D3 map renders neighboring wrapped world copies so horizontal panning can continue across the antimeridian without a hard edge.
-- Realtime OpenWeather precipitation tiles also wrap horizontally; tile X coordinates are normalized before backend requests.
-- Wind particles draw wrapped copies at the dateline so stream trails do not abruptly disappear when crossing ±180°.
 
 
 ## Optional satellite basemap
