@@ -183,21 +183,6 @@ The interface uses D3 not only for drawing charts, but also for data-driven tran
 
 The server prefers IPv4 for outbound requests and retries transient network/429/5xx failures with exponential backoff. Global realtime and seasonal map data are cached in memory; if a refresh temporarily fails, the most recent cached map can continue to be served. Climate AI uses Gemini 3.8 Flash by default and can fall back to Gemini 3.7 Flash or Gemini 3.5 Flash-Lite when the primary model is temporarily unavailable.
 
-## Defense fallback cache
-
-Interactive map requests use a 5-second freshness budget. The server immediately starts a live upstream request; if it does not finish within that budget, the newest cached snapshot is returned instead. Successful local requests are written to `server/cache/presentation`, which is intentionally Git-trackable so a known-good fallback can be bundled with the deployed project.
-
-Before the defense, while the APIs are healthy, run:
-
-```bash
-npm run cache:warm
-npm run cache:promote
-```
-
-Then commit `server/cache/presentation` to GitHub. Runtime cache files are ignored by Git. No API keys are stored in cache files.
-
-The fallback covers the realtime global map, seasonal map months, precipitation detail, selected-point current weather, short-range analytics, seasonal profiles and geocoding entries that have already been requested. If OpenWeather has no cached point response, the current-weather panel can still fall back to the nearest value from the cached global Open-Meteo grid; fields unavailable in that grid are shown as unavailable rather than invented.
-
 ## Continuous map tooltips
 
 Temperature, precipitation and wind tooltips are calculated from the already-loaded grid in browser memory. Moving the cursor does not create additional API requests. Wind speed/direction and scalar metrics use spatial interpolation between nearby grid points.
